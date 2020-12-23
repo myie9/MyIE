@@ -1,0 +1,21 @@
+HKCR
+{
+	MyIE9.MyIE9NSHandle.1 = s 'MyIE9NSHandle Class'
+	{
+		CLSID = s '{B96C53BD-FADC-45C7-A72D-EB5230433A46}'
+	}
+	MyIE9.MyIE9NSHandle = s 'MyIE9NSHandle Class'
+	{
+		CLSID = s '{B96C53BD-FADC-45C7-A72D-EB5230433A46}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B96C53BD-FADC-45C7-A72D-EB5230433A46} = s 'MyIE9NSHandle Class'
+		{
+			ProgID = s 'MyIE9.MyIE9NSHandle.1'
+			VersionIndependentProgID = s 'MyIE9.MyIE9NSHandle'
+			val AppID = s '{193FBA3F-EA12-46EC-AD6B-A58275327420}'
+			LocalServer32 = s '%Module%'
+		}
+	}
+}

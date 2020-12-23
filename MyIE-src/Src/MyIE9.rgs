@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{193FBA3F-EA12-46EC-AD6B-A58275327420} = s 'MyIE9'
+		'MyIE9.EXE'
+		{
+			val AppID = s {193FBA3F-EA12-46EC-AD6B-A58275327420}
+		}
+	}
+}

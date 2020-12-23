@@ -1,0 +1,41 @@
+##########################################################################
+## 怎样运行收集器的脚本
+## 1. 在脚本收集器中选择从 <script> 到 </script> 的脚本字符。 
+## 2. 点击收集器工具栏的“运行所选脚本”按钮。
+## 3. 如果您需要同时在所有页面中运行某个脚本，请按下 Ctrl 键并点击按钮。
+##########################################################################
+
+==========================================================================
+== Unlock Mouse Left Right Click ( 解除鼠标左右键限制 )
+==========================================================================
+<script language="JavaScript">
+function enableCtxt(){ if (event != null) event.cancelBubble=false; return true;}document.onmousedown=enableCtxt;document.oncontextmenu=enableCtxt;document.onmouseup=enableCtxt;document.onselectstart=enableCtxt;var frs=document.frames;if (frs != null){    for (i=0; i < frs.length; i++)    {        frs[i].document.onmousedown=enableCtxt;        frs[i].document.oncontextmenu=enableCtxt;        frs[i].document.onmouseup=enableCtxt;        frs[i].document.onselectstart=enableCtxt;    }}
+</script>
+
+==========================================================================
+== Kill Flash Ad and Flying Ad ( 清除飞行广告和Flash广告 )
+==========================================================================
+<script language="Javascript">
+mdoc=document;for(var i=0;i<mdoc.embeds.length;i++){ var obj=mdoc.embeds[i];obj.style.visibility="hidden";}var objs=document.all;var l=objs.length;var x=0;for (i=0;i<l;i++){var obj=objs[i];try{  if (obj.tagName=="OBJECT" && obj.classid=="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000")  {    obj.style.visibility="hidden";    x=x+1;    continue;  }} catch(e){}try{  if (obj.style.position=="absolute")  {  obj.style.visibility="hidden";  }}catch(e){}}
+</script>
+
+==========================================================================
+== Decrease Image Size to Fit Page Width ( 调整图片宽度到页面宽度 )
+==========================================================================
+<script language="JavaScript">
+var AllImages = document.images;if (AllImages != null){	for (i=0; i < AllImages.length; i++) { if (AllImages[i].width > document.body.clientWidth * 0.96) 			AllImages[i].width = document.body.clientWidth * 0.96;	}}
+</script>
+
+==========================================================================
+== Split Frame Page ( 拆解多框架页面 )
+==========================================================================
+<script language="Javascript">
+for(i=0;i<frames.length;i++){window.open(frames[i].location);}eval();
+</script>
+
+==========================================================================
+== Set Page Font Verdana ( 页面统一用Verdana字体 )
+==========================================================================
+<script language="JavaScript">
+var tr = window.document.body.createTextRange();if (tr != null){ tr.execCommand("FontName","","Verdana");    tr.execCommand("FontSize","","2");    tr.collapse(false);}
+</script>

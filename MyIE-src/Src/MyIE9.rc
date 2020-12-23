@@ -1,0 +1,4087 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HOMEPAGE            "http://hi.baidu.com/myie9"
+    IDS_SOFTWARE_FORUM      "http://tieba.baidu.com/f?kw=myie9"
+    IDS_DEFAULT_FAV_PATH    "D:\\ÊÕ²Ø¼Ð"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HISTORY             BITMAP  DISCARDABLE     "res\\treelist.bmp"
+IDB_REFRESH             BITMAP  DISCARDABLE     "res\\refresh.bmp"
+IDB_PROXY               BITMAP  DISCARDABLE     "res\\proxy.bmp"
+IDB_COLLECTOR_TOOL      BITMAP  DISCARDABLE     "res\\CollectorTool.bmp"
+IDB_LINKLIST            BITMAP  DISCARDABLE     "RES\\LinkList.Bmp"
+IDB_FAV_EXP             BITMAP  DISCARDABLE     "res\\FavExp.bmp"
+IDB_TASKBAR             BITMAP  DISCARDABLE     "RES\\TaskBar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "RES\\mainfrm.ico"
+IDI_SAVE                ICON    DISCARDABLE     "res\\save.ico"
+IDI_LINKLIST            ICON    DISCARDABLE     "RES\\LinkList.ICO"
+IDI_SECU                ICON    DISCARDABLE     "RES\\secure.ico"
+IDI_NORMAL              ICON    DISCARDABLE     "RES\\normal.ico"
+IDI_PAGE                ICON    DISCARDABLE     "RES\\page.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 247, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MyIE9"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,184,109,50,14
+    CTEXT           "",IDC_INFO,13,54,222,10
+    EDITTEXT        IDC_THANKS,123,81,107,12,ES_RIGHT | ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER
+    GROUPBOX        "",IDC_STATIC,10,43,233,27
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,101,233,1
+    LTEXT           "MyIE9 is free to download and use. \n\nSay it to your friends is the very big help for MyIE9.",
+                    IDC_ABOUT,11,11,232,30
+    PUSHBUTTON      "Donate...",IDC_DONATE,117,110,50,14,NOT WS_VISIBLE
+END
+
+IDD_POPUPLIST DIALOG DISCARDABLE  0, 0, 285, 243
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Enable Filter Auto Pop-ups",IDC_ENABLE_POP_WIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,2,9,189,10
+    CONTROL         "Block All Auto Pop-ups",IDC_KILL_AUTO_WIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,2,22,276,10
+    CONTROL         "Enable Filter Duplicate Popup Ad Window",
+                    IDC_KILL_DUP_WIN,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,166,7,36,10
+    CONTROL         "Kill page with below address(Sometimes Block all pop-ups won't work): (can use *)",
+                    IDC_KILL_LIST_WIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    2,106,276,10
+    CONTROL         "List1",IDD_POPUPLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,1,122,218,54
+    PUSHBUTTON      "Insert",IDC_INSERT,224,122,55,15
+    PUSHBUTTON      "Delete",IDC_DELETE,224,138,55,15
+    PUSHBUTTON      "Edit",IDC_EDIT,224,161,55,15
+    CONTROL         "List1",IDD_UN_POPUPLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,0,43,218,54
+    PUSHBUTTON      "Insert",IDC_UN_INSERT,223,43,55,15
+    PUSHBUTTON      "Delete",IDC_UN_DELETE,223,59,55,15
+    PUSHBUTTON      "Edit",IDC_UN_EDIT,223,82,55,15
+    CONTROL         "Don't Show Confirm Dialog of Filter Auto Popup Ad Window",
+                    IDC_NOT_CONFIRM_POPUP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,190,272,10
+    CONTROL         "Play Sound When Filter Popup Ad Window",
+                    IDC_PLAY_POPUP_SOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,202,272,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,101,276,1
+    LTEXT           "But allow below domain has popup:(can use *):",
+                    IDC_UN_STATIC,14,33,263,8
+    CONTROL         "Slider1",IDC_POP_DELAY,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_BOTH | NOT WS_VISIBLE | 
+                    WS_TABSTOP,222,13,26,6
+    LTEXT           "Strict\r\n\r\nNormal\r\n\r\nLoose",IDC_HIGH,254,15,28,8,
+                    NOT WS_VISIBLE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT | NOT WS_VISIBLE,
+                    218,13,1,4
+    CONTROL         "Also filter Auto Popup Ad Window When Refresh Page",
+                    IDC_FILTER_REFRESH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    1,214,272,10
+    RTEXT           "Auto Popup Filter Level:",IDC_FILTER_LEVEL,168,3,112,10,
+                    NOT WS_VISIBLE
+    CONTROL         "Disable Filter Dialog Window When Click Page",
+                    IDC_NOT_FILTER_CLICK_DIALOG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,226,272,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,1,183,276,1
+END
+
+IDD_SET_PROXY DIALOG DISCARDABLE  0, 0, 450, 229
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Proxy"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List1",IDC_CATES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,5,5,87,168
+    CONTROL         "List2",IDC_PROXY_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,100,5,286,168
+    PUSHBUTTON      "Insert",IDC_PROXY_NEW,389,5,53,15
+    PUSHBUTTON      "Delete",IDC_PROXY_DEL,389,21,53,15
+    PUSHBUTTON      "Edit",IDC_MODIFYPROXY,389,40,39,15
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,429,40,
+                    11,15
+    PUSHBUTTON      "Insert",IDC_NEWCATE,5,176,37,15
+    PUSHBUTTON      "Delete",IDC_DELCATE,44,176,37,15
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,81,176,
+                    11,15
+    DEFPUSHBUTTON   "&OK",IDOK,390,142,53,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,390,158,53,15
+    CONTROL         "Enable Proxy Server",IDC_USER_PROXY,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,359,195,89,
+                    12
+    CONTROL         "Enable Web Proxy/Translate Proxy",IDC_USE_WEB_PROXY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,203,175,12
+    EDITTEXT        IDC_BYPASS,182,210,203,12,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    LTEXT           "Proxy Server By pass URL(separate with space):",
+                    IDC_BYPASS_,183,198,262,8,NOT WS_VISIBLE
+    LTEXT           "Note: If you want to add a separator item, set name as --",
+                    IDC_NOTE,100,179,345,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,194,380,1
+END
+
+IDD_SET_KEY DIALOG DISCARDABLE  0, 0, 350, 187
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Quick Key"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,2,336,119
+    COMBOBOX        IDC_KEYLIST,7,125,50,125,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,111,125,232,14,ES_AUTOHSCROLL | ES_NOHIDESEL
+    PUSHBUTTON      "&Update",IDC_UPDATE,7,141,50,15
+    DEFPUSHBUTTON   "&OK",IDOK,248,167,46,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,297,167,46,15
+    RTEXT           "URL:",IDC_URL_,62,127,30,8
+    LTEXT           "Note: You can add multiple URL by separator ""|""",
+                    IDC_NOTE,111,145,232,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,161,338,1
+    PUSHBUTTON      "&Append",IDC_APPEND,58,141,50,15
+    CONTROL         "Use Quick Key of Internet Expleror",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,171,230,10
+END
+
+IDD_SET_ALIAS DIALOG DISCARDABLE  0, 0, 322, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set URL Alias"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,3,253,171
+    PUSHBUTTON      "&Insert",IDC_NEW,265,3,50,15
+    PUSHBUTTON      "&Delete",IDC_DEL,265,19,50,15
+    PUSHBUTTON      "&Edit",IDC_UPDATE,265,41,50,15
+    DEFPUSHBUTTON   "&OK",IDOK,265,141,50,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,265,159,50,15
+END
+
+IDD_INPUT_ALIAS DIALOG DISCARDABLE  0, 0, 300, 48
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input URL Alias"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_ALIAS,32,7,207,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_URL,32,27,207,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,243,7,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,243,27,50,14
+    LTEXT           "Alias:",IDC_ALIAS_,5,10,25,8
+    LTEXT           "URL:",IDC_URL_,5,30,25,8
+END
+
+IDD_CUSTOMIZE DIALOG DISCARDABLE  0, 0, 342, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Customize Toolbar"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,285,138,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,285,154,50,14
+    CONTROL         "List1",IDC_AVABTN,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,20,133,111
+    CONTROL         "List2",IDC_CURBTN,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | 
+                    WS_BORDER | WS_TABSTOP,202,20,133,111
+    PUSHBUTTON      "&Add >>",IDC_ADD,144,20,55,14
+    PUSHBUTTON      "<< &Remove",IDC_REMOVE,144,34,55,14
+    PUSHBUTTON      "Move &Up",IDC_MOVEUP,143,104,55,14
+    PUSHBUTTON      "Move &Down",IDC_MOVWDOWN,143,118,55,14
+    COMBOBOX        IDC_TEXT_OPT,68,139,108,49,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ICON_OPT,68,155,108,57,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Use Color Icons",IDC_COLOR_ICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,182,158,97,10
+    LTEXT           "Available Toolbar Buttons:",IDC_AVAI_,7,8,178,8
+    LTEXT           "Current Toolbar Buttons:",IDC_CUR_,202,8,133,8
+    LTEXT           "Text options:",IDC_TEXT_,7,142,58,8
+    LTEXT           "Icon options:",IDC_ICON_,7,158,58,8
+END
+
+IDD_FILEOPEN DIALOG DISCARDABLE  0, 0, 300, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open File"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "",IDC_ADDRESS,"ComboBoxEx32",CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP,7,
+                    27,284,163
+    CONTROL         "Open In New Window",IDC_OPEN_IN_NEW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,177,49,110,10
+    PUSHBUTTON      "B&rowse...",IDC_BROWSE,7,66,60,15
+    DEFPUSHBUTTON   "&OK",IDOK,177,66,56,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,237,66,56,15
+    LTEXT           "Address of URL or File or Folder:",IDC_MSG,7,10,283,8
+    CONTROL         "Direct Open Local File",IDC_DIRECT_OPEN_FILE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,49,165,10
+END
+
+IDD_PASSWORD DIALOG DISCARDABLE  0, 0, 218, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input Password"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_PASSWORD,5,14,153,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Remember the Password",IDC_REM_PSW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,34,150,10
+    DEFPUSHBUTTON   "&OK",IDOK,163,14,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,163,30,50,14
+    LTEXT           "Please Enter the Password:",IDC_MSG,5,4,206,8
+END
+
+IDD_ORG_GROUP DIALOG DISCARDABLE  0, 0, 450, 244
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Groups"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List4",IDC_GROUP_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,7,15,91,175
+    CONTROL         "List3",IDC_URL_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,105,15,340,175
+    PUSHBUTTON      "Insert",IDC_NEW_GROUP,7,223,40,14
+    PUSHBUTTON      "Delete",IDC_DEL_GROUP,47,223,40,14
+    PUSHBUTTON      "Insert",IDC_INSERT,105,223,40,14
+    PUSHBUTTON      "Delete",IDC_DELETE,145,223,40,14
+    PUSHBUTTON      "Edit",IDC_UPDATE,186,223,40,14
+    CONTROL         "Spin2",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,226,
+                    223,10,14
+    DEFPUSHBUTTON   "&OK",IDOK,344,223,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,395,223,50,14
+    LTEXT           "Existing Groups:",IDC_GROUP_,7,4,94,8
+    LTEXT           "Group Member:",IDC_MEMBER_,105,4,182,8
+    LTEXT           "Note: Checked group item will be set as startup group, checked group member will be open when open group",
+                    IDC_NOTE,7,209,439,8
+    CONTROL         "Show Member in Group Menu",IDC_SHOW_GROUP_MEMBER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,105,195,153,10
+    CONTROL         "Close All Before Open New Group",
+                    IDC_CLOSE_ALL_BEFORE_NEW_GROUP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,266,195,175,10
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,87,223,
+                    11,14
+END
+
+IDD_GROUP_URL DIALOG DISCARDABLE  0, 0, 309, 140
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "URL in Group"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_NAME,33,8,215,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_URL,33,25,215,45,ES_MULTILINE | ES_AUTOVSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,251,8,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,251,25,50,14
+    CONTROL         "Open the url when open group",IDC_STATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,33,77,248,10
+    GROUPBOX        "",IDC_STATIC,33,93,268,40
+    CONTROL         "Use Special Download Control",IDC_USE_SPECIAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,39,91,134,12
+    CONTROL         "Show Images",IDC_DLIMG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,39,106,86,10
+    CONTROL         "Play Sounds",IDC_DLSOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,128,106,75,10
+    CONTROL         "Play Videos",IDC_DLVIDEO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,209,106,88,10
+    CONTROL         "Enable ActiveX",IDC_DLACTIVEX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,39,118,86,10
+    CONTROL         "Enable Java",IDC_DLAPPLET,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,128,118,75,10
+    CONTROL         "Enable Script",IDC_DLJS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,209,118,88,10
+    LTEXT           "Name:",IDC_NAME_,5,10,26,8
+    LTEXT           "URL:",IDC_URL_,5,25,26,8
+END
+
+IDD_PROXY DIALOG DISCARDABLE  0, 0, 301, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Proxy Item"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_NAME,67,8,173,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROXY,67,28,173,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SPEED,67,47,55,77,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "&OK",IDOK,244,8,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,244,28,50,14
+    LTEXT           "Proxy Name:",IDC_NAME_,5,11,62,8
+    LTEXT           "Proxy URL:",IDC_PROXY_,5,30,62,8
+    LTEXT           "Proxy Speed:",IDC_SPEED_,5,49,62,8
+END
+
+IDD_SETREFRESH DIALOG DISCARDABLE  0, 0, 179, 42
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Refresh Frequency"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_REFINTERVAL,5,22,110,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "&OK",IDOK,125,5,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,125,22,50,14
+    LTEXT           "Refresh Frequency (S) :",IDC_MSG,5,9,116,8
+END
+
+IDD_QUICKSEARCH DIALOG DISCARDABLE  0, 0, 450, 278
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Search Engine"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List1",IDC_SEACHLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,436,170
+    EDITTEXT        IDC_NAME,40,183,165,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ICON_PATH,252,183,172,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_GET_ICON,426,183,17,13
+    EDITTEXT        IDC_SEARCHENGINE,40,200,403,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Insert",IDC_INSERT,5,218,50,16
+    PUSHBUTTON      "&Update",IDC_UPDATE,56,218,50,16
+    PUSHBUTTON      "&Delete",IDC_DELETE,106,218,50,16
+    PUSHBUTTON      "&Clean",IDC_CLEAN,156,218,50,16
+    CONTROL         "Spin2",IDC_SPIN,"msctls_updown32",UDS_ARROWKEYS,207,218,
+                    12,16
+    DEFPUSHBUTTON   "&OK",IDOK,342,218,50,16
+    PUSHBUTTON      "&Cancel",IDCANCEL,393,218,50,16
+    LTEXT           "Name:",IDC_NAME_,6,185,28,8
+    LTEXT           "Path:",IDC_SEARCHENGINE_,6,203,28,8
+    LTEXT           "Note: 1. Engine path must use %s or %u to indicate the keyword.\r\n      2. In the path, you can add multiple search path by separator ""|""\r\n      3. If you want to insert a separator, please set name as --",
+                    IDC_NOTE,7,241,436,30,SS_SUNKEN
+    LTEXT           "Icon:",IDC_ICON_,210,186,40,8
+END
+
+IDD_COLLECTOR DIALOGEX 0, 0, 124, 124
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Collector of Text, Output, Script"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TXT,10,10,105,30,ES_MULTILINE | ES_NOHIDESEL | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_IMAGE,10,45,105,30,ES_MULTILINE | ES_NOHIDESEL | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_FILTER,10,85,105,30,ES_MULTILINE | ES_NOHIDESEL | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL,
+                    WS_EX_TRANSPARENT
+END
+
+IDD_PROPPAGE_GENERAL DIALOG DISCARDABLE  0, 0, 285, 360
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Enable Title Animation Icon",IDC_DISP_ANIICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,150,39,120,10
+    CONTROL         "Forbid Show Window Main Title",IDC_FORBID_MAIN_TITLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,53,128,10
+    EDITTEXT        IDC_SKINPATH,71,313,183,13,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "...",IDC_GET_SKINPATH,256,313,17,13,NOT WS_VISIBLE
+    EDITTEXT        IDC_GROUP_PATH,71,330,183,13,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "...",IDC_GET_GROUPPATH,256,330,17,13,NOT WS_VISIBLE
+    CONTROL         "Use Favorite Path of Internet Explorer:",
+                    IDC_DEFAULT_FAVPATH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,71,93,138,12
+    EDITTEXT        IDC_FAV_PATH,71,106,183,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_GET_FAVPATH,256,106,17,13
+    CONTROL         "Use Default Link Bar Path",IDC_DEFAULT_LINKPATH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,71,141,201,12
+    EDITTEXT        IDC_LINK_PATH,71,154,183,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_GET_LINKPATH,256,154,17,13
+    GROUPBOX        "General",IDC_GENERAL,2,2,277,68
+    GROUPBOX        "Path",IDC_PATH,2,83,277,90
+    RTEXT           "Skin Path:",IDC_SKINPATH_,7,316,61,8,NOT WS_VISIBLE
+    RTEXT           "Group Path:",IDC_GROUP_PATH_,7,332,61,8,NOT WS_VISIBLE
+    RTEXT           "Favorite Path:",IDC_FAV_PATH_,7,109,61,8
+    RTEXT           "Link Bar Path:",IDC_LINK_PATH_,7,157,61,8
+    CONTROL         "1.1 Click top close to exit software",IDC_TOP_CLOSE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,12,131,10
+    CONTROL         "1.5 Forbid auto update",IDC_FORBID_UPDATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,150,13,116,10
+    CONTROL         "Remember page size:(%) (would a little slow down page opening speed)",
+                    IDC_KEEP_PAGE_SIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    1,195,242,11
+    EDITTEXT        IDC_PAGE_SIZE,247,195,31,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Open",IDC_OPEN_IE_FAV,212,92,61,13
+    PUSHBUTTON      "Set above path to IE favorite path",IDC_SET_TO_IE_FAV,
+                    70,121,159,16
+    CONTROL         "1.6 Enable IE8 Standard Mode",IDC_ENABLE_IE8MODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,150,26,119,10
+    CONTROL         "1.3 Auto Hide Favorites Side Bar",
+                    IDC_AUTO_HIDE_FAVORITES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,39,131,10
+    CONTROL         "1.2 Show IE Menu Right Click Image",
+                    IDC_AlwaysIEMenuRightClickImg,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,26,132,10
+    CONTROL         "1.4 Needn't type .com",IDC_DirectOpenForOneWord,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,52,128,10
+    RTEXT           "You can define MyIE9 Title (your name):",
+                    IDC_LABLE_APP_USER_TITLE,3,180,154,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_USER_APP_TITLE,161,178,117,13,ES_AUTOHSCROLL
+END
+
+IDD_PROPPAGE_WINDOW DIALOG DISCARDABLE  0, 0, 285, 226
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    COMBOBOX        IDC_NEW_SEQUENCE,76,12,73,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CLOSE_SEQUENCE,76,28,73,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BLANKWIN,168,20,106,107,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_INTERVAL,97,60,52,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,149,60,11,
+                    14
+    EDITTEXT        IDC_MAXWIN,97,75,52,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,149,74,11,
+                    14
+    EDITTEXT        IDC_TRANS,222,60,52,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,272,60,11,
+                    14
+    EDITTEXT        IDC_MONITOR_TRANS,222,75,52,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN4,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,272,75,11,
+                    14
+    CONTROL         "New Address",ID_NEW_ADDRESS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,108,66,10
+    CONTROL         "History",ID_NEW_HISTORY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,108,68,10
+    CONTROL         "Local File",ID_NEW_LOCAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,120,66,10
+    CONTROL         "Link in Page",ID_NEW_LINKS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,120,69,10
+    CONTROL         "Favorites",ID_NEW_FAV,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,132,66,10
+    CONTROL         "Home Page",ID_NEW_HOME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,132,69,10
+    CONTROL         "All Windows",IDC_ACTIVATE_NEWWIN,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,168,108,104,
+                    10
+    CONTROL         "File/New Window",ID_ACTIVE_FILE_NEW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,168,120,104,10
+    CONTROL         "New Address",IDC_ACTIVATE_NEW_ADDRESS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,168,132,104,10
+    CONTROL         "Open Folder to My Computer",IDC_OPEN_FOLDER_OUT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,162,125,12
+    CONTROL         "Enable Auto Refresh Current Page",
+                    IDC_AUTO_REFRESH_ACTIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,174,263,12
+    CONTROL         "At Least Keep One Blank Page",IDC_KEEP_ONEPAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,186,263,12
+    CONTROL         "Monitor Clipboard When New Blank Page",IDC_MONITOR_CLIP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,198,263,12
+    GROUPBOX        "Window Sequence",IDC_SEQ,2,2,152,44
+    RTEXT           "New Window To:",IDC_NEW_SEQUENCE_,9,15,64,8
+    RTEXT           "Close Window To:",IDC_CLOSE_SEQUENCE_,9,30,66,8
+    GROUPBOX        "Ctrl+N, New Button",IDC_NEW,161,2,118,44,WS_GROUP
+    GROUPBOX        "Window Control",IDC_CONTROL,2,50,151,42
+    RTEXT           "Open Interval(s):",IDC_INTERVAL_,5,63,90,8
+    RTEXT           "Open Max Once:",IDC_MAXWIN_,5,77,90,8
+    GROUPBOX        "Transparent (5 ~ 255)",IDC_TRANSPARENT,161,50,118,42
+    RTEXT           "Collector:",IDC_TRANS_,166,63,54,8
+    RTEXT           "Monitor:",IDC_MONITOR_TRANS_,166,77,54,8
+    GROUPBOX        "Open In New Window",IDC_NEW_WIN,2,96,151,51
+    GROUPBOX        "Active New Window",IDC_ACTIVE_NEW,161,96,118,51
+    GROUPBOX        "Special",IDC_SPECIAL,2,151,277,74
+    CONTROL         "Use Target Frame Name When Open Page",
+                    IDC_USE_TARGET_FRAME_NAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,210,263,12
+    CONTROL         "ReLoad Unshown Image",IDC_RELOAD_UNSHOWN_IMAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,168,162,104,12
+END
+
+IDD_PROPPAGE_TAB DIALOG DISCARDABLE  0, 0, 285, 321
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Multiple Rows",IDC_MULTILINE_TAB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,189,14,89,10
+    CONTROL         "Auto Adjusting Tab",IDC_AUTOFIT_TAB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,104,14,84,10
+    CONTROL         "Show Index Number",IDC_SHOW_INDEX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,28,93,10
+    CONTROL         "Show ""...""",IDC_SHOW_DOT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,104,28,78,10
+    CONTROL         "Show Read Icon",IDC_SHOW_READ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,41,94,10
+    CONTROL         "Show Favorite Icon",IDC_SHOW_FAVICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,104,41,82,10
+    CONTROL         "Disable",IDC_CC_DISABLE,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_GROUP,97,256,53,10
+    CONTROL         "Right Key",IDC_CC_RIGHT_KEY,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE,151,256,62,10
+    CONTROL         "Left Key",IDC_CC_LEFT_KEY,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE,215,256,58,10
+    EDITTEXT        IDC_MAXWIDTH,238,84,27,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,264,84,11,
+                    14
+    EDITTEXT        IDC_MINWIDTH,238,100,27,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,264,100,
+                    11,14
+    EDITTEXT        IDC_MAXCHARS,238,116,27,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,264,116,
+                    11,14
+    COMBOBOX        IDC_LDBCLICK,117,84,64,90,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_MCLIK,117,100,64,90,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_RCLIK,117,115,64,90,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Press Mouse Right Button In Page Content Area",
+                    IDC_WHEEL_TAB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,
+                    158,167,10
+    CONTROL         "Wheel On Tab",IDC_WHEEL_ON_TAB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,187,158,87,10
+    GROUPBOX        "Tab Width",IDC_WIDTH,189,73,89,61
+    RTEXT           "Max Chars:",IDC_MAXCHARS_,190,117,47,8
+    RTEXT           "Max Width:",IDC_MAXWIDTH_,190,86,47,8
+    RTEXT           "Min Width:",IDC_MINWIDTH_,190,101,47,8
+    GROUPBOX        "Tab General",IDC_GENERAL,2,2,277,58
+    RTEXT           "Left Double Click:",IDC_LDBCLICK_,9,87,107,8
+    RTEXT           "Middle Click:",IDC_MCLIK_,9,102,107,8
+    RTEXT           "Right Click(+Ctrl to jump menu ):",IDC_RCLIK_,9,118,107,
+                    8
+    GROUPBOX        "Tab Click",IDC_CLICK,2,73,183,61
+    LTEXT           "Click Icon Close:",IDC_CLICKICON,7,257,86,8,NOT 
+                    WS_VISIBLE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ | NOT WS_VISIBLE,7,
+                    250,262,1
+    GROUPBOX        "Switch Tab By Mouse Wheel",IDC_MOUSE,3,145,277,29
+    COMBOBOX        IDC_LDBCLICK_BLANK,62,191,212,159,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Double Click Tab Blank Area",IDC_MOUSE2,3,179,277,48
+    RTEXT           "Left Key:",IDC_LDBCLICK_BLANK_,10,194,51,11
+    COMBOBOX        IDC_RDBCLICK_BLANK,62,207,212,159,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Right Key:",IDC_RDBCLICK_BLANK_,10,208,51,11
+    CONTROL         "Show Close",IDC_SHOW_X,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,14,84,10
+END
+
+IDD_PROPPAGE_OTHERS DIALOG DISCARDABLE  0, 0, 285, 290
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Standard",IDC_MENU_WIN9X,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,166,21,53,10
+    CONTROL         "OfficeXp",IDC_MENU_WINXP,"Button",BS_AUTORADIOBUTTON,
+                    220,21,51,10
+    CONTROL         "HotKey1",IDC_HOTKEY,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,10,19,80,14
+    PUSHBUTTON      "Update",IDC_UPDATE_HOTKEY,92,18,50,15
+    EDITTEXT        IDC_CE1,179,55,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CE2,236,55,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SE1,179,74,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SE2,236,74,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CSE1,179,92,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CSE2,236,92,36,12,ES_AUTOHSCROLL
+    CONTROL         "Show Tray Icon",IDC_SHOW_TRAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,54,111,10
+    CONTROL         "Minimize to Tray",IDC_MIN_TRAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,65,111,11
+    CONTROL         "Close to Tray",IDC_CLOSE_TRAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,77,111,11
+    CONTROL         "Close to Tray  Close All",IDC_CLOSE_TRAY_CLOSEALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,95,112,11
+    PUSHBUTTON      "Set MyIE9 as Default Browser...",IDC_SET_DEFAULT,18,128,
+                    247,19
+    GROUPBOX        "System Tray",IDC_TRAY,3,42,121,68
+    GROUPBOX        "Domain Completion",IDC_DOMAIN,128,42,150,68
+    RTEXT           "Ctrl",IDC_CTRL,134,58,41,8
+    RTEXT           "Shift",IDC_SHIFT,134,76,41,8
+    RTEXT           "Ctrl+Shift",IDC_CTRL_SHIFT,134,93,41,8
+    CTEXT           "+",IDC_STATIC,228,58,8,8
+    CTEXT           "+",IDC_STATIC,228,77,8,8
+    CTEXT           "+",IDC_STATIC,228,95,8,8
+    GROUPBOX        "Menu Style",IDC_MENU,154,4,124,35
+    GROUPBOX        "Show/Hide MyIE9 Hot Key",IDC_KEY,4,4,147,35
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,9,91,109,1
+    GROUPBOX        "Default Browser",IDC_DEFAULT,2,116,277,40
+    CONTROL         "Open word out of all browsers",IDC_OPEN_WORD_OUT_IE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,3,163,112,11
+END
+
+IDD_ADDURLHERE DIALOG DISCARDABLE  0, 0, 315, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add to Favorite"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_NAME,40,7,215,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_URL,40,23,215,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,258,7,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,258,23,50,14
+    COMBOBOX        IDC_COMMAND,46,70,255,195,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,40,97,268,40
+    CONTROL         "Use Special Download Control",IDC_USE_SPECIAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,46,95,144,12
+    CONTROL         "Show Images",IDC_DLIMG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,46,110,86,10
+    CONTROL         "Play Sounds",IDC_DLSOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,136,110,75,10
+    CONTROL         "Play Videos",IDC_DLVIDEO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,216,110,89,10
+    CONTROL         "Enable ActiveX",IDC_DLACTIVEX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,46,122,86,10
+    CONTROL         "Enable Java",IDC_DLAPPLET,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,136,122,75,10
+    CONTROL         "Enable Script",IDC_DLJS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,216,122,89,10
+    LTEXT           "Name:",IDC_NAME_,7,9,25,8
+    LTEXT           "URL:",IDC_URL_,7,25,25,8
+    LTEXT           "Folder:",IDC_FOLDER_,7,44,25,8
+    EDITTEXT        IDC_FOLDER,40,44,215,12,ES_READONLY | NOT WS_BORDER | 
+                    NOT WS_TABSTOP
+    GROUPBOX        "Active Page and Execute Command Afte Page Complete",
+                    IDC_COMMAND_,40,56,268,35
+END
+
+IDD_PROPPAGE_SAVE DIALOG DISCARDABLE  0, 0, 285, 204
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Save Page by Site",IDC_CATEWITHSITE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,16,117,10
+    CONTROL         "Name Page By Title",IDC_NAME_BY_TITLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,132,16,141,10
+    CONTROL         "Save Page by Date",IDC_SAVE_BY_DATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,30,159,10
+    EDITTEXT        IDC_SAVEPATH,10,58,243,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_GET_SAVEPATH,255,58,17,13
+    COMBOBOX        IDC_AUTOSAVE,121,77,132,79,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_SAVEPATH_SORT,10,112,243,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_GET_SAVEPATH_SORT,255,112,17,13
+    CONTROL         "Show Auto Sort Save Dialog",IDC_SHOW_SORT_DLG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,130,243,10
+    EDITTEXT        IDC_IMAGEPATH,10,177,243,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_GET_IMAGEPATH,255,177,17,13
+    GROUPBOX        "Page Save",IDC_PAGE,2,2,277,143
+    LTEXT           "Auto Save Path:",IDC_SAVEPATH_,10,47,262,8
+    LTEXT           "Auto Sort Save Path:",IDC_SAVEPATH_SORT_,10,100,262,8
+    GROUPBOX        "Image Save",IDC_IMAGE,2,150,277,47
+    CONTROL         "Save Image by Site",IDC_IMG_CATEWITHSITE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,163,262,10
+    LTEXT           "Auto Save Type:",IDC_AUTOSAVE_,10,80,109,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,9,44,263,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,9,96,262,1
+END
+
+IDD_URL_FILTER DIALOG DISCARDABLE  0, 0, 285, 238
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List1",IDC_URL_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,1,18,218,90
+    PUSHBUTTON      "Insert",IDC_INSERT,224,18,55,15
+    PUSHBUTTON      "Delete",IDC_DELETE,224,34,55,15
+    PUSHBUTTON      "Edit",IDC_EDIT,224,93,55,15
+    CONTROL         "List1",IDC_UN_URL_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,1,121,218,90
+    PUSHBUTTON      "Insert",IDC_UN_INSERT,224,121,55,15
+    PUSHBUTTON      "Delete",IDC_UN_DELETE,224,137,55,15
+    PUSHBUTTON      "Edit",IDC_UN_EDIT,224,196,55,15
+    CONTROL         "Enable Filter Content(would leave blank in page) (Can use *)",
+                    IDC_URL_FILTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,1,6,
+                    271,10
+    LTEXT           "UnFilter List Ad Content (Can use *):",IDC_UN_STATIC,1,
+                    111,271,8
+    CONTROL         "Kill Blank Ad Content As(would slow down speed):",
+                    IDC_KILL_BLANK,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | 
+                    WS_TABSTOP,1,222,178,10
+    EDITTEXT        IDC_BLANK_CONTENT,183,221,92,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ | NOT WS_VISIBLE,1,
+                    215,278,1
+END
+
+IDD_SELECT_URL DIALOG DISCARDABLE  0, 0, 436, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Page Manager"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,8,19,419,152
+    PUSHBUTTON      "Select &All",IDC_SELECT_ALL,5,178,70,15
+    PUSHBUTTON      "Select &None",IDC_SELECT_NONE,5,195,70,15
+    PUSHBUTTON      "Delete Current",IDC_DEL_CURRENT,163,178,70,15,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Delete Selected",IDC_DEL_URL,163,195,70,15,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Edit &Title",IDC_EDIT_TITLE,243,178,70,15,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Edit &URL",IDC_EDIT_URL,243,195,70,15,NOT WS_VISIBLE
+    DEFPUSHBUTTON   "&Open Selected",IDC_OPEN_SELECTED,360,178,70,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,360,195,70,15
+    CONTROL         "&Work Offline",IDC_OFFLINE,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | BS_RIGHT | WS_TABSTOP,334,3,96,10
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",TCS_HOTTRACK,5,3,425,
+                    172
+END
+
+IDD_PROPPAGE_MOUSE DIALOG DISCARDABLE  0, 0, 285, 179
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    COMBOBOX        IDC_IMG_UP,62,13,77,195,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_IMG_LEFT,197,13,77,195,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_IMG_DOWN,62,30,77,195,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_IMG_RIGHT,197,30,77,195,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TXT_UP,62,66,77,195,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_TXT_LEFT,197,66,77,195,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_TXT_DOWN,62,84,77,195,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_TXT_RIGHT,197,84,77,195,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINK_UP,62,119,77,195,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_LINK_LEFT,197,119,77,195,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINK_DOWN,62,137,77,195,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINK_RIGHT,197,137,77,195,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Simulate Drag Link as Shift+Click",IDC_SIMU_DRAG_LINK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,2,161,277,10
+    GROUPBOX        "Mouse Drag Image Direction",IDC_DRAG_IMAGE,2,2,277,48
+    RTEXT           "Up:",IDC_IMG_UP_,7,15,54,8
+    RTEXT           "Left:",IDC_IMG_LEFT_,142,15,54,8
+    RTEXT           "Down:",IDC_IMG_DOWN_,7,32,54,8
+    RTEXT           "Right:",IDC_IMG_RIGHT_,142,32,54,8
+    GROUPBOX        "Mouse Drag Link Direction",IDC_DRAG_LINK,2,108,277,49
+    RTEXT           "Up:",IDC_LINK_UP_,7,122,54,8
+    RTEXT           "Left:",IDC_LINK_LEFT_,142,123,54,8
+    RTEXT           "Down:",IDC_LINK_DOWN_,7,139,54,8
+    RTEXT           "Right:",IDC_LINK_RIGHT_,142,139,54,8
+    GROUPBOX        "Mouse Drag Text Direction",IDC_DRAG_TEXT,2,55,277,48
+    RTEXT           "Up:",IDC_TXT_UP_,7,69,54,8
+    RTEXT           "Left:",IDC_TXT_LEFT_,142,69,54,8
+    RTEXT           "Down:",IDC_TXT_DOWN_,7,87,54,8
+    RTEXT           "Right:",IDC_TXT_RIGHT_,142,87,54,8
+END
+
+IDD_MONITOR DIALOGEX 0, 0, 32, 32
+STYLE DS_SYSMODAL | WS_POPUP
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    CTEXT           "%",IDC_PERCENT,1,7,18,8,NOT WS_VISIBLE,
+                    WS_EX_TRANSPARENT
+    ICON            IDR_MAINFRAME,IDC_STATIC,0,0,21,23
+END
+
+IDD_LINKLIST DIALOG DISCARDABLE  0, 0, 140, 87
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,46,123,33
+    EDITTEXT        IDC_NAME,7,23,58,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_URL,74,23,58,239,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Name:",IDC_STATIC_NAME,7,11,50,8,SS_CENTERIMAGE
+    RTEXT           "URL:",IDC_STATIC_URL,74,12,50,8,SS_CENTERIMAGE
+END
+
+IDD_PROPPAGE_GESTURE DIALOG DISCARDABLE  0, 0, 285, 232
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,8,13,264,120
+    EDITTEXT        IDC_GESTURE,65,159,207,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMMAND,65,176,207,159,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Confirm",IDC_UPDATE,104,194,50,15
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,67,193,
+                    11,15
+    PUSHBUTTON      "&New",IDC_NEW,170,193,50,15
+    PUSHBUTTON      "&Delete",IDC_DELETE,222,193,50,15
+    PUSHBUTTON      "U",IDC_UP,27,159,14,14,BS_FLAT
+    PUSHBUTTON      "D",IDC_DOWN,27,193,14,14,BS_FLAT
+    PUSHBUTTON      "L",IDC_LEFT,10,176,14,14,BS_FLAT
+    PUSHBUTTON      "R",IDC_RIGHT,44,176,14,14,BS_FLAT
+    PUSHBUTTON      "X",IDC_BACK,27,176,14,14,BS_FLAT
+    GROUPBOX        "Mouse Button Action and Gesture",IDC_MSG,2,2,277,139
+    GROUPBOX        "Command",IDC_MSG3,2,145,277,69
+    CONTROL         "Show Mouse Gesture in Status Bar",IDC_SHOW_GESTURE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,2,218,271,10
+END
+
+IDD_GROUP_SELECT DIALOG DISCARDABLE  0, 0, 337, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select URL"
+FONT 8, "Tahoma"
+BEGIN
+    COMBOBOX        IDC_NAME,82,7,179,132,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Get &Time",IDC_GET_TIME,265,7,65,13
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,26,323,167
+    PUSHBUTTON      "Select &All",IDC_SELECT_ALL,7,198,55,15
+    PUSHBUTTON      "Select &None",IDC_SELECT_NONE,63,198,55,15
+    PUSHBUTTON      "&Edit",IDC_UPDATE,119,198,55,15
+    CONTROL         "Spin2",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,176,
+                    198,11,15
+    DEFPUSHBUTTON   "&OK",IDOK,228,198,50,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,280,198,50,15
+    LTEXT           "Group Name:",IDC_NAME_,8,10,69,8
+END
+
+IDD_POPUP_CONFIRM DIALOG DISCARDABLE  0, 0, 300, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Confirm Block Auto Popup Window"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_URL,7,24,234,14,ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "&OK",IDOK,184,56,48,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,239,56,48,14
+    CONTROL         "Add to Filter List ( Can Modify With * )",
+                    IDC_ADDTO_POP_LIST,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,93,60,145,10
+    CONTROL         "Always block pop-ups. Don't show the dialog again.",
+                    IDC_NOT_POP_CONFIRM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,44,278,10
+    LTEXT           "A pop-up window from of below site want to show, confirm to block it?",
+                    IDC_FILTER_TYPE,7,9,279,8
+END
+
+IDD_ADD_POPUP DIALOG DISCARDABLE  0, 0, 300, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Confirm"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_URL,7,20,231,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,243,20,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,243,39,50,14
+    CONTROL         "Close The Page",IDC_CLOSE_PAGE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,43,230,10
+    LTEXT           "URL Add to Popup Filter List ( Can Modify With * ):",
+                    IDC_MSG,7,7,286,8
+END
+
+IDD_EXTERN_UTIL DIALOG DISCARDABLE  0, 0, 392, 239
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set External Toolbar"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List1",IDC_EXTERN_UTIL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,8,5,376,113
+    EDITTEXT        IDC_NAME,53,123,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMMAND,195,123,171,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSER_FILE,368,123,17,14
+    EDITTEXT        IDC_PARAM,53,142,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PATH,195,142,171,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSER_PATH,368,142,17,14
+    CONTROL         "Auto Run",IDC_AUTO_RUN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,164,123,10
+    CONTROL         "Auto Start",IDC_STARTUP,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,135,164,68,10
+    CONTROL         "Auto Close",IDC_CLOSEUTIL,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,207,164,66,10
+    PUSHBUTTON      "Import &Plugin...",IDC_IMPORT_PLUG_IN,284,161,101,15
+    PUSHBUTTON      "&Insert",IDC_ADD_UTIL,8,181,50,15
+    PUSHBUTTON      "&Update",IDC_MOD_UTIL,59,181,50,15
+    PUSHBUTTON      "&Delete",IDC_DEL_UTIL,110,181,50,15
+    PUSHBUTTON      "&Clean",IDC_CLEAN,161,181,50,15
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,212,
+                    181,11,15
+    DEFPUSHBUTTON   "&OK",IDOK,284,181,50,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,335,181,50,15
+    LTEXT           "Name:",IDC_NAME_,9,125,44,8
+    LTEXT           "Command:",IDC_CMD_,151,125,44,8
+    LTEXT           "Note: 1. Script plugin can not auto start/close with MyIE9.\r\n      2. You can choice plugin path to import all script plugin once together.\r\n      3. If you want to add a separator, set name as --",
+                    IDC_NOTE,8,200,376,30,SS_SUNKEN
+    LTEXT           "Parameter:",IDC_PARAM_,9,145,44,8
+    LTEXT           "Path:",IDC_PATH_,151,145,44,8
+END
+
+IDD_INPUT DIALOG DISCARDABLE  0, 0, 244, 108
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_OUTPUT,7,20,230,60,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_NOHIDESEL
+    DEFPUSHBUTTON   "&OK",IDOK,136,86,50,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,187,86,50,15
+    PUSHBUTTON      "&Copy Selected",IDC_COPY,7,86,65,15
+    PUSHBUTTON      "&Up URL",IDC_UP_URL,74,86,50,15
+    LTEXT           "",IDC_MSG,7,7,235,8
+END
+
+IDD_SET_FORM_DATA DIALOG DISCARDABLE  0, 0, 466, 355
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Form Data"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List1",IDC_FORM,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,224,451,55
+    PUSHBUTTON      "Fill Form &Password...",IDC_SET_FILL_PWD,91,283,80,15
+    PUSHBUTTON      "&Delete Form",IDC_DEL_URL,7,283,80,15
+    PUSHBUTTON      "&Edit Data",IDC_EDIT_ITEM,175,283,60,15
+    PUSHBUTTON      "&The Dilag Password...",IDC_SET_MAIN_PWD,91,333,80,15
+    PUSHBUTTON      "Delete &All Form",IDC_DEL_URL_ALL,7,333,80,15
+    DEFPUSHBUTTON   "&OK",IDOK,236,333,60,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,398,333,60,15
+    CONTROL         "Encrypt All Form Data When Save Form",
+                    IDC_ENCRYPT_STRING_ITEM,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | BS_RIGHT | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,435,6,23,10
+    LTEXT           "URL:",IDC_URL_,7,6,306,8
+    LTEXT           "Item:",IDC_ITEM,7,212,451,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,302,451,1
+    CONTROL         "Auto Submit Form",IDC_AUTO_SUBMIT,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_RIGHT | WS_TABSTOP,
+                    248,286,107,10
+    CONTROL         "List1",IDC_URL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,17,451,192
+    LTEXT           "Data was automatically encripted with local PC. Unreadable in other PC.\nHow to could use data when reinstall Windows? Now install MyIE9 to disk D:\\ and ghost your windows.",
+                    IDC_STATIC_FORM_DLG_TIP,7,306,451,21
+END
+
+IDD_PROPPAGE_TOOLBAR DIALOG DISCARDABLE  0, 0, 285, 232
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Show Toolbar Label",ID_TB_LABEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,15,257,10
+    CONTROL         "Show Address Bar Button",ID_ADDRESS_BUTTON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,28,133,10
+    CONTROL         "Show Search Bar Button",ID_SEARCH_BUTTON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,28,119,10
+    CONTROL         "Show Combo Box Icon",ID_TB_COMBO_ICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,41,257,10
+    CONTROL         "Click Address Bar Go Pop Proxy Menu",IDC_GO_PROXY_MENU,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,54,257,10
+    CONTROL         "Toolbar",IDC_FS_TOOL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,89,117,10
+    CONTROL         "External Toolbar",IDC_FS_EXTOOL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,103,117,10
+    CONTROL         "Address Bar",IDC_FS_ADDRESS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,117,117,10
+    CONTROL         "Search Bar",IDC_FS_SEARCH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,131,117,10
+    CONTROL         "Favorites Bar",IDC_FS_FAV,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,145,117,10
+    CONTROL         "Link Bar",IDC_FS_LINK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,159,117,10
+    CONTROL         "Tab Bar",IDC_FS_TAB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,173,117,10
+    CONTROL         "System Bar",IDC_FS_SYSMENU,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,187,117,10
+    CONTROL         "Menu Bar",IDC_FS_MENU,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,201,117,10
+    CONTROL         "Status Bar",IDC_FS_STATUS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,215,117,10
+    CONTROL         "Toolbar",IDC_FS_TOOL2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,158,89,117,10
+    CONTROL         "External Toolbar",IDC_FS_EXTOOL2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,158,103,117,10
+    CONTROL         "Address Bar",IDC_FS_ADDRESS2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,158,117,117,10
+    CONTROL         "Search Bar",IDC_FS_SEARCH2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,158,131,117,10
+    CONTROL         "Favorites Bar",IDC_FS_FAV2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,158,145,117,10
+    CONTROL         "Link Bar",IDC_FS_LINK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,158,159,117,10
+    CONTROL         "Tab Bar",IDC_FS_TAB2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,158,173,117,10
+    CONTROL         "System Bar",IDC_FS_SYSMENU2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,158,187,117,10
+    CONTROL         "Menu Bar",IDC_FS_MENU2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,158,201,117,10
+    CONTROL         "Status Bar",IDC_FS_STATUS2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,158,215,117,10
+    GROUPBOX        "Toolbar Option",IDC_TOOLBAR,2,2,277,68
+    GROUPBOX        "Full Screen Show",IDC_FULLSCREEN,2,75,137,155
+    GROUPBOX        "Auto Hide Show",IDC_AUTOHIDE,147,75,132,155
+END
+
+IDD_SAPREFS DIALOG DISCARDABLE  0, 0, 380, 270
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MyIE9 Options"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,268,247,50,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,322,247,50,15
+    CONTROL         "Tree1",IDC_PAGE_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | 
+                    TVS_TRACKSELECT | WS_BORDER | WS_TABSTOP,7,7,78,235
+    CONTROL         "",IDC_DLG_FRAME,"Static",SS_GRAYFRAME | NOT WS_VISIBLE,
+                    92,7,283,235
+    PUSHBUTTON      "&Reset Config...",IDC_RESTORE,7,246,77,16
+END
+
+IDD_PROPPAGE_MENU DIALOG DISCARDABLE  0, 0, 285, 161
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Single Column Favorite Menu",IDC_SINGLEMENU,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,30,264,10
+    CONTROL         "Compacted Favorite Bar(No Icon)",IDC_COMPACTFAVBAR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,16,264,10
+    CONTROL         "Favorite Bar Show URL",IDC_FAV_SHOW_URL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,44,264,10
+    CONTROL         "Display ""Add URL here...""",IDC_ADDFAV,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,57,264,10
+    CONTROL         "Display ""Open All URL""",IDC_DISPLAY_OPENALL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,70,264,10
+    CONTROL         "Show Hidden File",IDC_SHOW_HIDDEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,83,264,10
+    EDITTEXT        IDC_MAXMENU,112,113,34,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,151,111,
+                    11,14
+    GROUPBOX        "Favorite Bar And Menu",IDC_FAV,2,2,277,97
+    GROUPBOX        "Max Link Width",IDC_MENU_SIZE,7,103,272,51
+    RTEXT           "Max Favorite Bar Link Chars:",IDC_MAXMENU_,9,115,99,8
+    EDITTEXT        IDC_MAXMENU_OTHER,112,128,34,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    RTEXT           "Max Other Favorite Link Chars:",IDC_MAXMENU_OTHER_,9,
+                    130,99,8
+END
+
+IDD_PROPPAGE_START DIALOG DISCARDABLE  0, 0, 285, 313
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Blank Page",IDC_START_MODE,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_GROUP,7,38,28,10
+    CONTROL         "IE Home Page",IDC_START_MODE2,"Button",
+                    BS_AUTORADIOBUTTON,10,94,107,10
+    CONTROL         "Last Visited (Jump Dialog)",IDC_START_MODE3,"Button",
+                    BS_AUTORADIOBUTTON,132,94,120,10
+    CONTROL         "Last Visited",IDC_START_MODE4,"Button",
+                    BS_AUTORADIOBUTTON,10,80,111,10
+    CONTROL         "Startup Favorites",IDC_START_MODE5,"Button",
+                    BS_AUTORADIOBUTTON,132,80,73,10
+    CONTROL         "Startup Group",IDC_START_MODE6,"Button",
+                    BS_AUTORADIOBUTTON,214,80,64,10
+    CONTROL         "None (Fast)",IDC_START_MODE7,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,7,51,27,10
+    CONTROL         "URL:",IDC_START_MODE8,"Button",BS_AUTORADIOBUTTON,12,22,
+                    37,10
+    CONTROL         "MyIE9 Start Page:",IDC_START_MODE9,"Button",
+                    BS_AUTORADIOBUTTON,10,66,73,10
+    CONTROL         "Save last closed page and auto load to menu when start",
+                    IDC_LOAD_LAST_CLOSE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,115,263,10
+    CONTROL         "Clean Cookies",IDC_CLOSE_CLEAN_COOKIES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,175,120,10
+    CONTROL         "Clean History",IDC_CLOSE_CLEAN_HISTORY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,134,175,141,10
+    CONTROL         "Clean Cache",IDC_CLOSE_CLEAN_CACHE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,188,120,10
+    CONTROL         "Clean Saved Form Data",IDC_CLOSE_CLEAN_FORM_DATA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,134,188,141,10
+    CONTROL         "Clean Typed Address",IDC_CLOSE_CLEAN_TYPED_ADDRESS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,201,120,10
+    CONTROL         "Clean Typed Search Keyword",
+                    IDC_CLOSE_CLEAN_TYPED_SEARCH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,134,201,141,10
+    CONTROL         "Clean Undo Close",IDC_CLOSE_CLEAN_UNDO_CLOSE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,214,262,10
+    GROUPBOX        "Auto Open When Start",IDC_START,2,2,277,157,WS_GROUP
+    GROUPBOX        "Close Mode",IDC_CLOSE,2,162,277,67,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,9,107,263,1
+    CONTROL         "Forbid Change Home Page",IDC_LOCKHOME,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,226,130,42,
+                    10
+    CONTROL         "Forbid Multiple MyIE9",IDC_ONLYONE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,145,133,10
+    CONTROL         "Auto Run MyIE9 After Windows Power On",IDC_AUTO_RUN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,129,192,11
+    EDITTEXT        IDC_EDIT_HOME_URL,53,14,214,24,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    PUSHBUTTON      "&Current",IDC_BUTTON_HOME_CUR,54,43,47,12
+    PUSHBUTTON      "&None",IDC_BUTTON_HOME_NONE,109,43,47,12
+    PUSHBUTTON      "&Blank",IDC_BUTTON_HOME_BLANK,164,43,47,12
+    PUSHBUTTON      "&Get IE Home",IDC_BUTTON_HOME_GET_IE,219,43,47,12
+    COMBOBOX        IDC_COMBO_STARTPAGE,89,64,178,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROPPAGE_DELETE DIALOG DISCARDABLE  0, 0, 285, 222
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | 
+                    WS_BORDER | WS_TABSTOP,8,14,182,86
+    PUSHBUTTON      "Delete Selected",IDC_DELETE,193,14,80,16
+    PUSHBUTTON      "Delete Current",IDC_DELETE_CURRENT,193,31,80,16
+    PUSHBUTTON      "Delete All",IDC_DELETEALL,193,48,80,16
+    PUSHBUTTON      "Edit",IDC_EDIT,193,84,80,16
+    CONTROL         "List1",IDC_LIST2,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | 
+                    WS_BORDER | WS_TABSTOP,8,125,182,86
+    PUSHBUTTON      "Delete Selected",IDC_DELETE_SEARCH,193,125,80,16
+    PUSHBUTTON      "Delete Current",IDC_DELETE_CURRENT_SEARCH,193,142,80,16
+    PUSHBUTTON      "Delete All",IDC_DELETEALL_SEARCH,193,159,80,16
+    PUSHBUTTON      "Edit",IDC_EDIT_SEARCH,193,195,80,16
+    GROUPBOX        "Delete Typed Address",IDC_ADDRESS,2,2,277,105
+    GROUPBOX        "Delete Typed Search Keyword",IDC_SEARCH,2,113,277,105
+END
+
+IDD_PROPPAGE_STATUSBAR DIALOG DISCARDABLE  0, 0, 285, 228
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_STATUS_STRING_FORMAT,14,15,254,14,ES_AUTOHSCROLL
+    GROUPBOX        "Status Bar Display Format",IDC_DISP,2,2,277,220
+    LTEXT           "A.Year\r\nB.Month\r\nC.Day\r\nD.Hour\r\nE.Minute\r\nF.Second\r\nG.Day of Week\r\nH.Online Time\r\nI.Page Count\r\nJ.Filtered Page Count",
+                    IDC_INFO1,14,33,256,82
+    LTEXT           "K.Local IP Address\r\nL.Available Memory\r\nM.Network Download Speed(K/S)\r\nN.Network Upload Speed(K/S)\r\nO.Network Total Speed(K/S)\r\nP.Network Download Stat(M)\r\nQ.Network Upload Stat(M)\r\nR.Network Total Stat(M)\r\nS.Modem Speed(K/S)",
+                    IDC_INFO2,14,118,256,75
+    LTEXT           "T.Proxy Server Name\r\nU.Proxy Server Address",
+                    IDC_INFO3,14,196,256,24
+END
+
+IDD_PROPPAGE_CONFIRM DIALOG DISCARDABLE  0, 0, 285, 223
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Enable Confirm When Exit",IDC_COMFIRMEXIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,15,264,10
+    CONTROL         "Enable Confirm When Exit (Page Downloading)",
+                    IDC_COMFIRMEXIT_DOWNING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,28,260,10
+    CONTROL         "Enable Confirm When Close All Pages",
+                    IDC_CONFIRMCLOSEALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,61,260,10
+    CONTROL         "Enable Confirm When Close All Pages (Keep Current)",
+                    IDC_CONFIRMCLOSEALL_KEEPCUR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,74,260,10
+    CONTROL         "Enable Confirm When Close Locked Page",
+                    IDC_CONFIRMCLOSELOCK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,87,260,10
+    CONTROL         "Enable Confirm When Navigate Evil(With Virus or Cheat) Website",
+                    IDC_CONFIRM_UNSAFE_PAGE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,122,260,10
+    GROUPBOX        "Confirm Exit",IDC_EXIT,2,2,277,42
+    GROUPBOX        "Confirm Close",IDC_CLOSE,2,49,277,53
+    GROUPBOX        "Confirm Navigate",IDC_NAVIGATE,2,107,277,56
+    CONTROL         "Confirm When Page Has Mixed Safe And Unsafe Content( Alert using gmail)",
+                    IDC_CONFIRM_MIX_CONTENT_ALERT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,137,260,10
+    CONTROL         "Disable Script Error Tip",IDC_KEEPSILENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,151,125,10
+END
+
+IDD_PROPPAGE_COLLECTOR DIALOG DISCARDABLE  0, 0, 285, 161
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Add Current Time Before Content",IDC_OUTPUT_SAVE_TIME,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,17,263,10
+    CONTROL         "Add New Content to Top",IDC_ADD_NEW_BOTTOM,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,9,35,125,10
+    CONTROL         "Add New Content to Bottom",IDC_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON,136,35,139,10
+    CONTROL         "Save Popup Filter Information",IDC_OUTPUT_SAVE_FILTER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,68,261,10
+    CONTROL         "Save Content Filter Information",
+                    IDC_OUTPUT_SAVE_URL_FILTER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,81,261,10
+    CONTROL         "Save Page Saved Information",IDC_OUTPUT_SAVE_PAGE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,94,261,10
+    CONTROL         "Save Image Saved Information",IDC_OUTPUT_SAVE_IMG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,107,261,10
+    CONTROL         "Save Text Saved Information",IDC_OUTPUT_SAVE_TEXT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,120,261,10
+    CONTROL         "Auto Clean Collector Output When Exit",
+                    IDC_OUTPUT_AUTO_CLEAN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,139,261,10
+    GROUPBOX        "Collector General",IDC_GENERAL,2,2,277,49
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,9,134,263,1
+    GROUPBOX        "Collector of Output",IDC_OUTPUT,2,55,277,101
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,9,30,263,1
+END
+
+IDD_PROPPAGE_DOWNLOAD DIALOG DISCARDABLE  0, 0, 285, 225
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Show Images",IDC_DLIMG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,17,87,10
+    CONTROL         "Play Sounds",IDC_DLSOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,102,17,82,10
+    CONTROL         "Play Videos",IDC_DLVIDEO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,187,17,87,10
+    CONTROL         "Enable ActiveX",IDC_DLACTIVEX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,30,87,10
+    CONTROL         "Enable Java",IDC_DLAPPLET,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,102,30,82,10
+    CONTROL         "Enable Script",IDC_DLJS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,187,30,87,10
+    CONTROL         "Enable Animations (All Windows)",IDC_PLAY_ANIMATION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,48,259,10
+    CONTROL         "Enable Flash (All Windows)",IDC_PLAY_FLASH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,61,259,10
+    COMBOBOX        IDC_DOWN_ALL,128,100,144,61,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DOWN_MANAGER,11,154,214,91,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Edit...",IDC_DOWN_EDIT,228,154,43,14
+    EDITTEXT        IDC_DOWN_TYPE,11,185,260,14,ES_AUTOHSCROLL
+    GROUPBOX        "Default Download Control",IDC_DEFAULT,2,2,277,76
+    LTEXT           "These Pages Download All:",IDC_ALL_,11,102,116,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,11,43,263,1
+    GROUPBOX        "Special Download Control",IDC_SPECIAL,2,84,277,40
+    GROUPBOX        "Download Manager",IDC_DOWN,2,129,277,92
+    LTEXT           "Select Download Manager:",IDC_DOWN_MANAGER_,11,142,256,
+                    8
+    LTEXT           "Monitor File Type:",IDC_DOWN_TYPE_,11,173,256,8
+    LTEXT           "Note: Press Ctrl Key to Ignore Download Manager",
+                    IDC_NOTE,11,205,258,8
+END
+
+IDD_PROPPAGE_TABSTYLE DIALOG DISCARDABLE  0, 0, 285, 238
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Normal Tab",IDC_STYLE_NT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,15,79,10
+    CONTROL         "Flat Tab",IDC_STYLE_FT,"Button",BS_AUTORADIOBUTTON,97,
+                    15,79,10
+    CONTROL         "Flat Button",IDC_STYLE_FB,"Button",BS_AUTORADIOBUTTON,
+                    182,15,89,10
+    CONTROL         "Place Tab at Top",IDC_TAB_TOP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,61,262,10
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",TCS_FOCUSNEVER,3,85,262,
+                    16
+    PUSHBUTTON      "Unselected Tab Color...",IDC_UNSEL_COLOR,8,134,130,14
+    PUSHBUTTON      "Unselected Tab Font Color...",IDC_UNSEL_FONT_COLOR,8,
+                    151,130,14
+    PUSHBUTTON      "Tab Separator Color...",IDC_SEP_COLOR,142,176,130,14
+    PUSHBUTTON      "Selected Tab Font Color...",IDC_SEL_FONT_COLOR,144,152,
+                    130,14
+    PUSHBUTTON      "Use Default Color Scheme",IDC_DEFAULT_COLOR,8,176,130,
+                    14
+    GROUPBOX        "Tab Style",IDC_STYLE,2,2,277,73
+    GROUPBOX        "Tab Color",IDC_COLOR,2,117,277,83
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,50,262,1
+    PUSHBUTTON      "Selected Tab Color...",IDC_SEL_COLOR,144,134,130,14
+    CONTROL         "Skin Tab",IDC_STYLE_SKIN_TAB,"Button",
+                    BS_AUTORADIOBUTTON,10,34,84,10
+END
+
+IDD_CLEAN_ALL DIALOG DISCARDABLE  0, 0, 246, 144
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Clean All"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Cookies",IDC_CLOSE_CLEAN_COOKIES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,20,213,10
+    CONTROL         "History",IDC_CLOSE_CLEAN_HISTORY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,33,213,10
+    CONTROL         "Cache",IDC_CLOSE_CLEAN_CACHE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,46,213,10
+    CONTROL         "Saved Form Data",IDC_CLOSE_CLEAN_FORM_DATA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,59,213,10
+    CONTROL         "Typed Address",IDC_CLOSE_CLEAN_TYPED_ADDRESS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,72,213,10
+    CONTROL         "Typed Search Keyword",IDC_CLOSE_CLEAN_TYPED_SEARCH,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,85,213,10
+    CONTROL         "Undo Close",IDC_CLOSE_CLEAN_UNDO_CLOSE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,98,213,10
+    PUSHBUTTON      "Select &All",IDC_SELECT_ALL,7,122,55,15
+    PUSHBUTTON      "Select &None",IDC_SELECT_NONE,63,122,55,15
+    DEFPUSHBUTTON   "&OK",IDOK,127,122,55,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,183,122,55,15
+    GROUPBOX        "Select Clean Item",IDC_CLEAN_ALL,7,6,231,110
+END
+
+IDD_PROPPAGE_FTP DIALOG DISCARDABLE  0, 0, 285, 124
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Open In MyIE9",IDC_FTP_OPEN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,18,257,10
+    CONTROL         "Open In &Internet Explorer",IDC_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON,10,32,257,10
+    CONTROL         "Open In Others Ftp Application",IDC_RADIO3,"Button",
+                    BS_AUTORADIOBUTTON,10,46,257,10
+    EDITTEXT        IDC_EXE_PATH,10,61,242,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE,254,61,20,13
+    LTEXT           "Note: Press Ctrl Key to Ignore Ftp Application",
+                    IDC_NOTE,10,81,261,8
+    GROUPBOX        "Ftp URL Open Option",IDC_FTP,2,2,277,94
+END
+
+IDD_SORT_SAVE DIALOG DISCARDABLE  0, 0, 239, 233
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Auto Sort Save"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_FILENAME,7,21,226,14,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,54,141,157
+    CONTROL         "Name By Page Title",IDC_TYPE,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | BS_RIGHT | WS_TABSTOP,109,8,124,10
+    PUSHBUTTON      "&New...",IDC_NEW,153,54,80,14
+    PUSHBUTTON      "&Rename...",IDC_RENAME,153,69,80,14
+    PUSHBUTTON      "O&pen",IDC_OPEN,153,84,80,14
+    PUSHBUTTON      "Sort By &Date",IDC_DATE_SAVE,153,125,80,14
+    PUSHBUTTON      "&Auto Save",IDC_NOT_SORT,153,140,80,14
+    DEFPUSHBUTTON   "&OK",IDOK,153,180,80,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,153,197,80,14
+    CONTROL         "Show Auto Sort Save Dialog",IDC_SHOW_SORT_DLG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,216,226,10
+    LTEXT           "File Name:",_IDC_FILENAME,7,9,94,8
+    LTEXT           "Select Directory:",IDC_MSG,7,42,160,8
+END
+
+IDD_SELECT_LANG DIALOG DISCARDABLE  0, 0, 170, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Language"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,156,167
+    DEFPUSHBUTTON   "&OK",IDOK,60,180,50,16
+    PUSHBUTTON      "&Cancel",IDCANCEL,113,180,50,16
+END
+
+IDD_SELPROXYCAT DIALOG DISCARDABLE  0, 0, 187, 45
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input Proxy Category"
+FONT 8, "Tahoma"
+BEGIN
+    COMBOBOX        IDC_PROXYCATS,7,7,118,125,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Clean Category",IDC_CLEAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,27,117,10
+    DEFPUSHBUTTON   "&OK",IDOK,130,7,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,130,24,50,14
+END
+
+IDD_FLYLIST DIALOG DISCARDABLE  0, 0, 285, 243
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Enable Filter Flying in Below Pages (can use *):\n(Would cause little lower speed. Maybe some normal content also be filtered.)",
+                    IDC_ENABLE_FLY_CONTENT,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,2,7,268,29
+    CONTROL         "List1",IDD_FLYLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,1,39,218,54
+    PUSHBUTTON      "Insert",IDC_INSERT,224,39,55,15
+    PUSHBUTTON      "Delete",IDC_DELETE,224,55,55,15
+    PUSHBUTTON      "Edit",IDC_EDIT,224,78,55,15
+    CONTROL         "List1",IDD_UN_FLYLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,0,110,218,54
+    PUSHBUTTON      "Insert",IDC_UN_INSERT,224,110,55,15
+    PUSHBUTTON      "Delete",IDC_UN_DELETE,224,126,55,15
+    PUSHBUTTON      "Edit",IDC_UN_EDIT,224,149,55,15
+    LTEXT           "Not Filter List (can use *):",IDC_UN_FLY_STATIC,3,98,
+                    263,8
+    CONTROL         "Enable Filter Flying When Refresh.",
+                    IDC_ENABLE_FLY_WHEN_REFRESH,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,3,173,268,13
+END
+
+IDD_ADD_FLY DIALOG DISCARDABLE  0, 0, 300, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Confirm"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_URL,7,41,231,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,243,41,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,243,60,50,14
+    CONTROL         "Filter The Page",IDC_FILTER_FLY_PAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,64,230,10
+    LTEXT           "URL Add to Flying Filter List ( Can Modify With * ):\nCaution: Would a little lower speed. Maybe some normal content would also be filtered.",
+                    IDC_MSG_ADD_FLY_DLG,7,7,286,29
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 243
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_POPUPLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_SET_PROXY, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 448
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_SET_KEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_SET_ALIAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_INPUT_ALIAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 41
+    END
+
+    IDD_CUSTOMIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_FILEOPEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_PASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_ORG_GROUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 445
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_GROUP_URL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_PROXY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_SETREFRESH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+
+    IDD_QUICKSEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 443
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_PROPPAGE_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+
+    IDD_PROPPAGE_WINDOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_PROPPAGE_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 314
+    END
+
+    IDD_PROPPAGE_OTHERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_ADDURLHERE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_PROPPAGE_SAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_URL_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_SELECT_URL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 429
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_PROPPAGE_MOUSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_MONITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 25
+        BOTTOMMARGIN, 30
+    END
+
+    IDD_LINKLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_PROPPAGE_GESTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_GROUP_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_POPUP_CONFIRM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_ADD_POPUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_EXTERN_UTIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_INPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_SET_FORM_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 458
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 348
+    END
+
+    IDD_PROPPAGE_TOOLBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_SAPREFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 373
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_PROPPAGE_MENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_PROPPAGE_START, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 306
+    END
+
+    IDD_PROPPAGE_DELETE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_PROPPAGE_STATUSBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_PROPPAGE_CONFIRM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_PROPPAGE_COLLECTOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_PROPPAGE_DOWNLOAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_PROPPAGE_TABSTYLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_CLEAN_ALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_PROPPAGE_FTP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_SORT_SAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_SELECT_LANG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_SELPROXYCAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_FLYLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_ADD_FLY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_POINTER_DRAG        CURSOR  DISCARDABLE     "res\\drag.cur"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MyIE9.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "F&ile"
+    BEGIN
+        MENUITEM "E&xit",                       ID_APP_EXIT
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        POPUP "&New\tCtrl+N"
+        BEGIN
+            MENUITEM "&Blank Page\tF1",             ID_FILE_NEW_BLANK
+            MENUITEM SEPARATOR
+            MENUITEM "&Home Page\tCtrl+Shift+H",    ID_FILE_NEW_S
+            MENUITEM "From &Clipboard\tCtrl+Shift+N", ID_FILE_NEW_CLIP
+            MENUITEM SEPARATOR
+            MENUITEM "Selected &Text\tCtrl+Shift+T", ID_FILE_NEW_SELECT
+            MENUITEM "Selected &Links\tCtrl+Shift+L", 
+                                                    ID_FILE_NEW_SELECTED_LINK
+
+            MENUITEM SEPARATOR
+            MENUITEM "Current &Page\tCtrl+Shift+P", ID_FILE_NEW_CURRENTPAGE
+            MENUITEM "Current &Up Page\tCtrl+Shift+U", 
+                                                    ID_FILE_NEW_CURRENT_UP_PAGE
+
+            MENUITEM "Current &Root Page\tCtrl+Shift+R", 
+                                                    ID_FILE_NEW_CURRENT_HOME_PAGE
+
+        END
+        MENUITEM "New &MyIE9",                  ID_FILE_NEWMyIE9
+        MENUITEM SEPARATOR
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPENF
+        MENUITEM "Stop Open Windows",           ID_FILE_STOP_OPENALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Save As...\tCtrl+S",         ID_FILE_SAVEAS
+        POPUP "Save"
+        BEGIN
+            MENUITEM "Save &HTML...\tCtrl+H",       ID_FILE_SAVEHTML
+            MENUITEM "Save Whole Cont&ent...\tCtrl+E", ID_FILE_QUICKSAVE
+            MENUITEM SEPARATOR
+            MENUITEM "Auto Save\tCtrl+B",           ID_FILE_AUTOSAVE
+            MENUITEM "Auto Save (&All)",            ID_FILE_AUTOSAVE_ALL
+            MENUITEM "A&uto Save (Sort)...\tCtrl/Alt+U", 
+                                                    ID_FILE_AUTOSAVE_SORT
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Close\tAlt+C",               ID_FILE_CLOSE_1
+        MENUITEM "Close All\tCtrl+Shift+W",     ID_FILE_CLOSEALL
+        POPUP "Close &All"
+        BEGIN
+            MENUITEM "Close All &Keep Current\tCtrl+K", 
+                                                    ID_FILE_CLOSE_KEEPCUR
+            MENUITEM SEPARATOR
+            MENUITEM "Close Alike URL Tabs...",     ID_FILE_CLOSE_ALIKE_URL
+            MENUITEM "Close Alike Title Tabs...",   ID_FILE_CLOSE_ALIKE_TITLE
+
+            MENUITEM SEPARATOR
+            MENUITEM "Close All Right Tabs (=>)",   ID_FILE_CLOSE_ALL_RIGHT
+            MENUITEM "Close All Left Tabs (<=)",    ID_FILE_CLOSE_ALL_LEFT
+            MENUITEM SEPARATOR
+            MENUITEM "Close All UnMarked Tabs",     ID_FILE_CLOSE_MARKED_URL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Page Set&up...",              ID_FILE_PRINT_SETUP
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view...",           ID_FILE_PRINTPREVIEW
+        MENUITEM SEPARATOR
+        POPUP "S&end"
+        BEGIN
+            MENUITEM "&Page by Email...",           ID_FILE_SENDPAGEBYEMAIL
+            MENUITEM "&Link by Email...",           ID_FILE_SENDLINKBYEMAIL
+        END
+        MENUITEM "&Import/Export...",           ID_FILE_IMPORT_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "P&roperty...",                ID_FILE_PROPERTY
+        MENUITEM "&Work Offline\tAlt+O",        ID_FILE_WORKOFFLINE
+        MENUITEM "&Hide/Show MyIE9\tCtrl+`",    ID_FILE_HIDE
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+            MENUITEM "&External Toolbar",           ID_VIEW_EX_TOOL
+            MENUITEM "&Address Bar",                ID_VIEW_ADDRESSBAR
+            MENUITEM "&Search Bar",                 ID_VIEW_SEARCH
+            MENUITEM "&Favorites Bar",              ID_VIEW_FAVS
+            MENUITEM "&Links Bar",                  ID_VIEW_LINKS
+            MENUITEM "Tab Bar",                     ID_VIEW_TASKBAR
+            MENUITEM "System Bar",                  ID_SYSMENU_BAR
+            MENUITEM SEPARATOR
+            MENUITEM "&Menu Bar\tCtrl+F11",         ID_MENU_BAR
+            MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+            MENUITEM SEPARATOR
+            MENUITEM "Lock Tool&bars",              ID_VIEW_LOCKTOOLBAR
+            MENUITEM "Toolbar Text Label",          ID_VIEW_TOOLBARTEXTLABEL
+            MENUITEM "&Customize Toolbar...",       ID_VIEW_TOOLBARS_CUSTOMIZE
+
+        END
+        POPUP "Sid&e Bar"
+        BEGIN
+            MENUITEM "&Favorites",                  ID_FAVORITES_DROPDOWN
+            MENUITEM "&History",                    ID_VIEW_HIS
+            MENUITEM "F&older",                     ID_VIEW_FOLDER
+            MENUITEM "&Resource",                   ID_VIEW_EXPLOREBAR_RESOURCE
+
+        END
+        POPUP "&System Bar"
+        BEGIN
+            MENUITEM "Enable Previous",             ID_VIEW_WIN_PRE
+            MENUITEM "Enable Next",                 ID_VIEW_WIN_NEXT
+            MENUITEM "Enable Close All",            ID_VIEW_WIN_CLOSEALL
+            MENUITEM "Enable Minimize",             ID_VIEW_WIN_MIN
+            MENUITEM "Enable Restore",              ID_VIEW_WIN_RESTORE
+            MENUITEM "Enable Close",                ID_VIEW_WIN_CLOSE
+        END
+        MENUITEM SEPARATOR
+        POPUP "Te&xt Size"
+        BEGIN
+            MENUITEM "Increase\tCtrl+Up",           ID_VIEW_FONTS_INCREASE
+            MENUITEM "Decrease\tCtrl+Down",         ID_VIEW_FONTS_DECREASE
+            MENUITEM SEPARATOR
+            MENUITEM "Largest",                     ID_VIEW_FONTS_LARGEST
+            MENUITEM "Large",                       ID_VIEW_FONTS_LARGE
+            MENUITEM "Medium",                      ID_VIEW_FONTS_MEDIUM
+            MENUITEM "Small",                       ID_VIEW_FONTS_SMALL
+            MENUITEM "Smallest",                    ID_VIEW_FONTS_SMALLEST
+        END
+        POPUP "Enco&de"
+        BEGIN
+            MENUITEM "Auto Select",                 ID_VIEW_ENCODING_AUTO
+            MENUITEM SEPARATOR
+            MENUITEM "Western European",            ID_VIEW_ENCODING_WESTERNEUROPEAN
+
+            MENUITEM "Universal Alphabet (UTF-8)",  ID_MENUITEM33080
+            MENUITEM SEPARATOR
+            MENUITEM "Chinese Simplified(GB2312)",  ID_VIEW_ENCODING_CHINESESIMPLIFIED
+
+            MENUITEM "Chinese Simplified(HZ)",      ID_MENUITEM33091
+            MENUITEM "Chinese Traditional(Big5)",   ID_VIEW_ENCODING_CHINESETRADITIONAL
+
+            MENUITEM SEPARATOR
+            MENUITEM "Japanese(Auto Select)",       ID_VIEW_ENCODING_JANESEAUTO
+
+            MENUITEM "Japanese(EUC)",               ID_VIEW_ENCODING_JANESEEUC
+
+            MENUITEM "Japanese(Shift-JIS)",         ID_VIEW_ENCODING_JANESE
+            MENUITEM SEPARATOR
+            MENUITEM "Korean (Auto Select) ",       ID_VIEW_ENCODING_KOREAN_AUTO
+
+            MENUITEM "Korean (EUC)",                ID_VIEW_ENCODING_KOREAN_EUC
+
+            MENUITEM "Korean (ISO)",                ID_VIEW_ENCODING_KOREAN_ISO
+
+            MENUITEM SEPARATOR
+            POPUP "&More"
+            BEGIN
+                MENUITEM "Central European (DOS)",      ID_MENUITEM33065
+                MENUITEM "Cyrillic Alphabet (DOS)",     ID_MENUITEM33066
+                MENUITEM SEPARATOR
+                MENUITEM "Western Alphabet",            ID_MENUITEM33067
+                MENUITEM "Western Alphabet (ISO)",      ID_MENUITEM33068
+                MENUITEM "Central European Alphabet (ISO)", ID_MENUITEM33069
+                MENUITEM "Latin 3 Alphabet (ISO)",      ID_MENUITEM33070
+                MENUITEM "Baltic Alphabet (ISO) ",      ID_MENUITEM33071
+                MENUITEM "Cyrillic Alphabet (ISO)",     ID_MENUITEM33072
+                MENUITEM "Arabic Alphabet (ISO)",       ID_MENUITEM33073
+                MENUITEM "Greek Alphabet (ISO)",        ID_MENUITEM33074
+                MENUITEM "Hebrew Alphabet (ISO)",       ID_MENUITEM33075
+                MENUITEM SEPARATOR
+                MENUITEM "Cyrillic Alphabet (KOI8-R)",  ID_MENUITEM33076
+                MENUITEM SEPARATOR
+                MENUITEM "Universal Alphabet",          ID_MENUITEM33077
+                MENUITEM "Universal Alphabet (Big-Endian)", ID_MENUITEM33078
+                MENUITEM "Universal Alphabet (UTF-7)",  ID_MENUITEM33079
+                MENUITEM SEPARATOR
+                MENUITEM "Central European Alphabet (Windows)", 
+                                                        ID_MENUITEM33081
+                MENUITEM "Cyrillic Alphabet (Windows)", ID_MENUITEM33082
+                MENUITEM "Greek Alphabet (Windows)",    ID_MENUITEM33083
+                MENUITEM "Turkish Alphabet",            ID_MENUITEM33084
+                MENUITEM "Hebrew Alphabet (Windows)",   ID_MENUITEM33085
+                MENUITEM "Arabic Alphabet (Windows)",   ID_MENUITEM33086
+                MENUITEM "Baltic Alphabet (Windows)",   ID_MENUITEM33087
+                MENUITEM "Vietnamese Alphabet (Windows)", ID_MENUITEM33088
+                MENUITEM "Thai (Windows)",              ID_MENUITEM33089
+                MENUITEM SEPARATOR
+                MENUITEM "User Defined",                ID_MENUITEM33090
+            END
+        END
+        POPUP "Page &Zoom"
+        BEGIN
+            MENUITEM "More\tCtrl+Numpad +",         ID_VIEW_PAGESIZE_ADD10
+            MENUITEM "Less\tCtrl+Numpad -",         ID_VIEW_PAGESIZE_DEC10
+            MENUITEM SEPARATOR
+            MENUITEM "50%",                         ID_VIEW_PAGESIZE_50
+            MENUITEM "100%\tCtrl+Numpad /",         ID_VIEW_PAGESIZE_100
+            MENUITEM "150%",                        ID_VIEW_PAGESIZE_200
+        END
+        MENUITEM SEPARATOR
+        POPUP "G&o"
+        BEGIN
+            MENUITEM "&Back\tAlt+Left",             ID_GO_BACK
+            MENUITEM "&Forward\tAlt+Right",         ID_GO_FORWARD
+            MENUITEM "&Up",                         ID_GO_UP_PAGE
+            MENUITEM SEPARATOR
+            MENUITEM "&Home Page",                  ID_GO_START_PAGE
+            MENUITEM SEPARATOR
+            MENUITEM "Previous Window\tF2",         ID_TAB_PRE
+            MENUITEM "Next Window\tF3",             ID_TAB_NEXT
+        END
+        POPUP "&Undo Close"
+        BEGIN
+            MENUITEM "Set Undo Close...",           ID_VIEW_SET_UNDO_CLOSE
+            MENUITEM "&Undo Recently Close\tAlt+Z", ID_EDIT_UNDOCLOSE
+            MENUITEM SEPARATOR
+        END
+        POPUP "Scroll Page"
+        BEGIN
+            MENUITEM "Scroll Page Up",              ID_GO_PAGE_UP
+            MENUITEM "Scroll Page Down",            ID_GO_PAGE_DOWN
+            MENUITEM SEPARATOR
+            MENUITEM "Scroll Page Top",             ID_GO_PAGE_TOP
+            MENUITEM "Scroll Page Bottom",          ID_GO_PAGE_BOTTOM
+            MENUITEM SEPARATOR
+            MENUITEM "Scroll Page Left",            ID_GO_PAGE_LEFT
+            MENUITEM "Scroll Page Right",           ID_GO_PAGE_RIGHT
+        END
+        MENUITEM SEPARATOR
+        POPUP "&More Tools"
+        BEGIN
+            MENUITEM "Pr&otect Tab...",             ID_VIEW_PROTECT
+            MENUITEM "&Lock Tab\tAlt+X",            ID_VIEW_LOCK
+            MENUITEM SEPARATOR
+            MENUITEM "&Mark Tab\tAlt+M",            ID_VIEW_MARK
+            MENUITEM "Mark &Alike URL Tabs...",     ID_VIEW_MARK_KIND
+            MENUITEM SEPARATOR
+            MENUITEM "Forbid Auto &Navigate",       ID_VIEW_FORBID_AUTO_NAV
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Sto&p\tEsc",                  ID_VIEW_STOP
+        MENUITEM "Stop All\tShift+Esc",         ID_VIEW_STOP_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh\tF5",                ID_VIEW_REFRESH
+        MENUITEM "Refresh All\tShift+F5",       ID_VIEW_REFRESHALL
+        MENUITEM "Completely Refresh\tCtrl+F5", ID_VIEW_COMPLETELY_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "Sour&ce",                     ID_VIEW_SOURCE
+        MENUITEM SEPARATOR
+        MENUITEM "&Full Screen\tF11",           ID_VIEW_FULLSCREEN
+        MENUITEM "Auto &Hide\tF12",             ID_VIEW_AUTOHIDE
+        MENUITEM "Always Top Most\tCtrl+Alt+M", ID_VIEW_TOP_MOST
+        MENUITEM SEPARATOR
+        MENUITEM "Select &Language...",         ID_VIEW_SELECT_LANG
+    END
+    POPUP "F&avorites"
+    BEGIN
+        MENUITEM "&Add To Favorites...\tCtrl+D", ID_FAVORITES_ADDTOFAVORITES
+        MENUITEM "&Organize Favorites...",      ID_FAVORITES_ORGNIZEFAVORITES
+
+        POPUP "Favorites &Tools"
+        BEGIN
+            MENUITEM "&Import Favorites...",        ID_FAVORITES_IMPORTFAVORITES
+
+            MENUITEM "&Export Favorites...",        ID_FAVORITES_EXPORTFAVORITES
+
+            MENUITEM SEPARATOR
+            MENUITEM "&Reset Favorites Order",      ID_FAVORITES_RESET_ORDER
+        END
+        MENUITEM SEPARATOR
+    END
+    POPUP "&Groups"
+    BEGIN
+        MENUITEM "Set &Groups...",              ID_ORGGROUP
+        MENUITEM "&Save Windows As Group...",   ID_SAVEAS_GROUP
+        POPUP "&Add To Group"
+        BEGIN
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+    END
+    POPUP "&Tools"
+    BEGIN
+        POPUP "Auto &Scroll"
+        BEGIN
+            MENUITEM "Auto &Scroll Current Window\tCtrl+Shift+S", 
+                                                    ID_TOOLS_AUTOSCROLL_USEAUTOSCROLLING
+
+            MENUITEM "Auto Scroll All Windows",     ID_TOOLS_AUTOSCROLL_ALL
+            MENUITEM SEPARATOR
+            MENUITEM "Auto Scroll After Downloading", 
+                                                    ID_TOOLS_AUTOSCROLL_AUTOSCROLLINGAFTERDOWNLOADING
+
+            MENUITEM "Use Mouse to Control Speed",  ID_TOOLS_MOUSE_SCR
+            MENUITEM SEPARATOR
+            MENUITEM "Auto Scroll Once One Line",   ID_TOOLS_AUTOSCROLL_PAGE0
+
+            MENUITEM "Auto Scroll Once 1/4 Page",   ID_TOOLS_AUTOSCROLL_PAGE4
+
+            MENUITEM "Auto Scroll Once 1/2 Page",   ID_TOOLS_AUTOSCROLL_PAGE2
+
+            MENUITEM "Auto Scroll Once One Page",   ID_TOOLS_AUTOSCROLL_PAGE1
+
+            MENUITEM SEPARATOR
+            MENUITEM "Slow",                        ID_TOOLS_AUTOSCROLL_SLOW
+            MENUITEM "Medium",                      ID_TOOLS_AUTOSCROLL_MEDIUM
+
+            MENUITEM "Fast",                        ID_TOOLS_AUTOSCROLL_FAST
+        END
+        POPUP "Auto &Refresh"
+        BEGIN
+            MENUITEM "Set Refresh Frequency...",    ID_TOOLS_REFFRE
+            MENUITEM "Enable Auto Refresh",         ID_TOOLS_AUTOREF
+        END
+        POPUP "Auto &Fill Form"
+        BEGIN
+            MENUITEM "Set Form Data...\tAlt+3",     ID_SC_SET_FORM_DATA
+            MENUITEM SEPARATOR
+            MENUITEM "Fill Current Form\tAlt+Q",    ID_SC_FILLFORM
+            MENUITEM SEPARATOR
+            MENUITEM "Save Current Form\tAlt+1",    ID_SC_SAVEFORM
+            MENUITEM "Save Current Form as General Form\tAlt+2", 
+                                                    ID_SC_SAVEGENFORM
+        END
+        POPUP "&Background Color"
+        BEGIN
+            MENUITEM "Set Background Color...",     ID_TOOLS_SELBG
+            MENUITEM SEPARATOR
+            MENUITEM "Show Background Color for &Current Window", 
+                                                    ID_TOOLS_SETBG
+            MENUITEM "Show Background Color for All Windows", 
+                                                    ID_TOOLS_ALL_BK
+            MENUITEM SEPARATOR
+            MENUITEM "Auto Show Background Color",  ID_TOOLS_AUTOSETBG
+        END
+        POPUP "Page &Download Control"
+        BEGIN
+            MENUITEM "Show &Images",                ID_OPTIONS_LOADIMAGE
+            MENUITEM "Play &Sounds",                ID_OPTIONS_LOADSOUNDS
+            MENUITEM "Play &Videos",                ID_OPTIONS_LOADVIDEOS
+            MENUITEM "Enable Active&X",             ID_OPTIONS_ALLOWACTIVEX
+            MENUITEM "Enable &Java",                ID_OPTIONS_ALLOWJAVAAPPLET
+
+            MENUITEM "Enable Sc&ripts",             ID_OPTIONS_ALLOWSCRIPTS
+            MENUITEM SEPARATOR
+            MENUITEM "Disable &Animations",         ID_OPTIONS_ALLOW_ANIMATE
+            MENUITEM SEPARATOR
+            MENUITEM "Disable Download &Flash",     ID_OPTIONS_DISABLE_FLASH
+            MENUITEM "Disable Download Active&X",   ID_TOOLS_DISDOWN_ACTIVEX
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Clean System"
+        BEGIN
+            MENUITEM "Clean System A&ll Data...",   ID_TOOLS_ALL
+            MENUITEM SEPARATOR
+            MENUITEM "&Clean Cookies",              ID_TOOLS_COOKIE
+            MENUITEM "Clean &History",              ID_TOOLS_HISTORY
+            MENUITEM "Clean C&ache",                ID_TOOLS_CACHE
+            MENUITEM SEPARATOR
+            MENUITEM "Clean Saved Form Data",       ID_TOOL_CLEANMyIE9FORM
+            MENUITEM SEPARATOR
+            MENUITEM "Clean Typed A&ddress",        ID_TOOLS_CLEANADDR
+            MENUITEM "Clean Typed Search Keyword",  ID_CLEAN_TYPED_SEARCH
+            MENUITEM SEPARATOR
+            MENUITEM "Clean Undo Close",            ID_TOOLS_CLEAN_UNDO_CLOSE
+
+        END
+        POPUP "&External Toolbar"
+        BEGIN
+            MENUITEM "Set External Toolbar...",     ID_TOOLS_EXTERNALUTILITIES_UTILITYMANAGER
+
+            MENUITEM "Run Selected in Current Window\tAlt+R", 
+                                                    ID_TOOLS_EXTERNAL_RUN
+            MENUITEM "Auto Run Selected After Downloading", 
+                                                    ID_TOOLS_EXTERNAL_AUTORUN
+
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Ad Filter"
+        BEGIN
+            MENUITEM "Set Ad Filter...",            ID_TOOLS_EDITPOPUPFILTERLIST
+
+            MENUITEM "Add to Popup Filter...\tCtrl+Q", 
+                                                    ID_TOOLS_ADDTOPOPUPFILTER
+
+            MENUITEM SEPARATOR
+            MENUITEM "Disable Download &Flash",     ID_OPTIONS_DISABLE_FLASH
+            MENUITEM "Disable Download Active&X",   ID_TOOLS_DISDOWN_ACTIVEX
+            MENUITEM SEPARATOR
+            MENUITEM "Enable Filter &Popup Ad Window\tAlt+P", 
+                                                    ID_TOOLS_EABLEPOPUPFILTER
+
+            MENUITEM "Enable Filter Ad &Content",   ID_TOOLS_URL_FILTER
+            MENUITEM "Enable Filter &Dialog Ad Window", 
+                                                    ID_TOOLS_DIALOG_FILTER
+            MENUITEM "Enable Filter Fl&ying Ad\tAlt+Y", ID_TOOLS_FLY_FILTER
+        END
+        POPUP "&URL Alias"
+        BEGIN
+            MENUITEM "Set URL Alias...",            ID_SHORTCUT_MANALIAS
+            MENUITEM "Enable URL Alias",            ID_SHORTCUT_ALIAS
+        END
+        POPUP "&Quick Key"
+        BEGIN
+            MENUITEM "Set Quick Key...",            ID_SHORTCUT_SC
+            MENUITEM "Enable Quick Key",            ID_SHORTCUT_USE_SC
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Proxy"
+        BEGIN
+            MENUITEM "Set Proxy...",                ID_OPTIONS_SET_PROXY
+            MENUITEM SEPARATOR
+            MENUITEM "Enable Web Proxy",            ID_OPTIONS_USE_WEBP
+        END
+        POPUP "Searc&h"
+        BEGIN
+            MENUITEM "Set Search Engine...",        ID_TOOLS_QUICKSEARCH
+            POPUP "&More Tools"
+            BEGIN
+                MENUITEM "High&light Keyword\tCtrl+L",  ID_HIGH_LIGHT_SEARCH_BAR
+
+                MENUITEM "Find Keyword in Page",        ID_FIND_SEARCH_BAR
+                MENUITEM SEPARATOR
+                MENUITEM "Search Selected Text",        ID_TOOLS_SEARCH_TEXT
+                MENUITEM "Hightl&ight Selected Text\tCtrl+I", 
+                                                        ID_HIGHLIGHT_SELECTED_TEXT
+
+                MENUITEM "Find Previous Selected Text", ID_FIND_PREV_SELECTED_TEXT
+
+                MENUITEM "Find Next Selected Text",     ID_FIND_NEXT_SELECTED_TEXT
+
+                MENUITEM SEPARATOR
+                MENUITEM "Match Case",                  ID_TOOLS_SEARCH_CASE
+                MENUITEM "Match Whole Word",            ID_TOOLS_SEARCH_WHOLE
+
+                MENUITEM "Not Save Keyword",            ID_NOT_SAVE_KEY
+                MENUITEM SEPARATOR
+                MENUITEM "Delete Keyword...",           ID_TOOLS_SEARCH_DELETE
+
+            END
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "&More Tools"
+        BEGIN
+            MENUITEM "Monitor",                     ID_TOOLS_MONITOR
+            MENUITEM "Collector\tCtrl+G",           ID_TOOLS_COLLECT
+            MENUITEM SEPARATOR
+            MENUITEM "E-Mail",                      ID_TOOLS_EMAIL
+            MENUITEM "Address Book",                ID_TOOLS_ADDR
+            MENUITEM "Synchronize...",              ID_TOOLS_SYNC
+            MENUITEM SEPARATOR
+            MENUITEM "Open In &Internet Explorer",  ID_ADDTO_IE
+            MENUITEM SEPARATOR
+            MENUITEM "Open Link",                   ID_OPEN_LINK
+            MENUITEM "Open Link in Foreground",     ID_OPEN_LINK_ACTIVE
+            MENUITEM "Open Link in Background",     ID_OPEN_LINK_DEACTIVE
+            MENUITEM SEPARATOR
+            MENUITEM "Mouse Drag Page",             ID_RMOUSE_DRAG
+            MENUITEM "Mouse Gesture",               ID_RMOUSE_GESTURE
+            MENUITEM "&Back And Close\tAlt+S",      ID_GO_BACK_AND_CLOSE
+        END
+        POPUP "&Window"
+        BEGIN
+            MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+            MENUITEM "&Tile Vertically\tCtrl+T",    ID_WINDOW_TILE_VERT
+            MENUITEM "Tile &Horizontally",          ID_WINDOW_TILE_HORZ
+            MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+            MENUITEM "&Restore",                    ID_WINDOW_RESTOR
+            MENUITEM "&Minimize",                   ID_WINDOW_MIN
+            MENUITEM SEPARATOR
+            MENUITEM "Current Visiting &Windows...\tAlt+W", 
+                                                    ID_WINDOW_MANAGER
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Page Manager...\tCtrl+M",     ID_LAST_VISITED
+        MENUITEM "Link &List...\tAlt+L",        ID_ALL_PAGE_LINKS
+        MENUITEM SEPARATOR
+        MENUITEM "&MyIE9 Options...",           ID_OPTIONS_MyIE9OPTIONS
+        MENUITEM "Internet &Options...",        ID_TOOLS_INTERNETOPTIONS
+        MENUITEM "&Set As Default Browser",     ID_OPTIONS_SET_DEFAULT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Visit Author's Homepage",    ID_HELP_HOMEPAGE
+        MENUITEM "Visit &Forum",                ID_HELP_FORUM
+        MENUITEM "MyIE9 &Help",                 ID_HELP_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&Start Update",               ID_HELP_MAIL_TO
+        MENUITEM SEPARATOR
+        MENUITEM "&Current WebSite is Evil",    ID_HELP_CUR_EVIL
+        MENUITEM "&About...",                   ID_APP_ABOUT
+    END
+    POPUP "Ski&n"
+    BEGIN
+        MENUITEM "Disable Background",          ID_TOOLS_NO_BACKGROUND
+        MENUITEM "Use Default Skin",            ID_TOOLS_SKIN_DEFAULT
+        MENUITEM SEPARATOR
+    END
+END
+
+IDR_RTAB MENU DISCARDABLE 
+BEGIN
+    POPUP "tab"
+    BEGIN
+        MENUITEM "Close All &Keep Current\tCtrl+K", ID_RTAB_CLOSE_KEEPCUR
+        MENUITEM "&Close\tAlt+C",               ID_FILE_CLOSE_2
+        MENUITEM SEPARATOR
+        POPUP "&Others"
+        BEGIN
+            MENUITEM "Close All &Right Pages",      ID_FILE_CLOSE_ALL_RIGHT
+            MENUITEM "Close All &Left Tabs (<=)",   ID_FILE_CLOSE_ALL_LEFT
+            MENUITEM SEPARATOR
+            MENUITEM "&Filter Flying...",           ID_RTAB_ADDTOFLYFILTER
+            MENUITEM "&Popup Blocker...\tCtrl+R",   ID_RTAB_ADDTOPOPUPFILTER
+            MENUITEM SEPARATOR
+            MENUITEM "Stick &Title",                ID_RTAB_STICKNAME
+            MENUITEM "Pr&otect Tab...",             ID_RTAB_PROTECT
+            MENUITEM SEPARATOR
+            MENUITEM "&Mark Tab\tAlt+M",            ID_RTAB_MARK
+            MENUITEM "Mark Al&ike URL Tabs...",     ID_RTAB_MARK_KIND
+            MENUITEM "Close All &UnMarked Tabs",    ID_FILE_CLOSE_MARKED_URL
+            MENUITEM "Clos&e Alike URL Tabs...",    ID_FILE_CLOSE_ALIKE_URL
+            MENUITEM SEPARATOR
+            MENUITEM "Auto &Save\tCtrl+B",          ID_RTAB_AUTOSAVE
+        END
+        MENUITEM "Close &All\tCtrl+Shift+W",    ID_FILE_CLOSEALL
+        MENUITEM "&Lock Tab\tAlt+X",            ID_RTAB_LOCK
+        MENUITEM SEPARATOR
+        MENUITEM "&URL Alias...",               ID_RTAB_ADDALIAS
+        MENUITEM "&Favorite...\tCtrl+D",        ID_RTAB_ADDFAV
+    END
+END
+
+IDR_RFAV_URL MENU DISCARDABLE 
+BEGIN
+    POPUP "fav url"
+    BEGIN
+        POPUP "&Add To Group"
+        BEGIN
+            MENUITEM SEPARATOR
+        END
+        MENUITEM "Add To Startup Folder",       ID_RFAV_START
+        MENUITEM "Open in New Window",          ID_RFAV_OPEN_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "Add to URL Alias...",         ID_RFAV_ALIAS
+        MENUITEM "Add to Quick Key...",         ID_RFAV_ADDSHORTCUT
+        MENUITEM SEPARATOR
+        MENUITEM "Replace With Current URL",    ID_RFAV_REPLACE
+        MENUITEM "Copy URL",                    ID_RFAV_COPY
+        MENUITEM "Delete",                      ID_RFAV_DEL
+        MENUITEM "Rename",                      ID_RFAV_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "Property...",                 ID_RFAV_PROPERTY
+    END
+END
+
+IDR_RFAV_FOLDER MENU DISCARDABLE 
+BEGIN
+    POPUP "fav folder"
+    BEGIN
+        MENUITEM "Open All Links",              ID_RFAV_OPENALL
+        MENUITEM SEPARATOR
+        MENUITEM "Set As Startup Folder",       ID_RFAV_START_FOLDER
+        MENUITEM "Find...",                     ID_RFAVFOLDER_FIND
+        MENUITEM "Reset Order",                 ID_RFAVFOLDER_RESET
+        MENUITEM "Rename",                      ID_RFAV_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "Folder Only",                 ID_RFAVFOLDER_ONLY
+    END
+END
+
+IDR_F2F12 MENU DISCARDABLE 
+BEGIN
+    POPUP "F"
+    BEGIN
+        MENUITEM "2",                           ID_F_2
+        MENUITEM "3",                           ID_F_3
+        MENUITEM "4",                           ID_F_4
+        MENUITEM "5",                           ID_F_5
+        MENUITEM "6",                           ID_F_6
+        MENUITEM "7",                           ID_F_7
+        MENUITEM "8",                           ID_F_8
+        MENUITEM "9",                           ID_F_9
+        MENUITEM "10",                          ID_F_10
+        MENUITEM "11",                          ID_F_11
+        MENUITEM "12",                          ID_F_12
+    END
+    POPUP "C"
+    BEGIN
+        MENUITEM "1",                           ID_C_1
+        MENUITEM "2",                           ID_C_2
+        MENUITEM "3",                           ID_C_3
+        MENUITEM "4",                           ID_C_4
+        MENUITEM "5",                           ID_C_5
+        MENUITEM "6",                           ID_C_6
+        MENUITEM "7",                           ID_C_7
+        MENUITEM "8",                           ID_C_8
+        MENUITEM "9",                           ID_C_9
+        MENUITEM "0",                           ID_C_0
+    END
+END
+
+IDR_TRAYMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "tray"
+    BEGIN
+        MENUITEM "&MyIE9 Options...",           ID_OPTIONS_MyIE9OPTIONS
+        MENUITEM "Internet &Options...",        ID_TOOLS_INTERNETOPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "MyIE9 &Help",                 ID_HELP_HELP
+        MENUITEM "&About MyIE9...",             ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Monitor",                     ID_TOOLS_MONITOR
+        MENUITEM "Link &List...\tAlt+L",        ID_ALL_PAGE_LINKS
+        MENUITEM SEPARATOR
+        MENUITEM "Fill Current Form\tAlt+Q",    ID_SC_FILLFORM
+        MENUITEM "Save Current Form\tAlt+1",    ID_SC_SAVEFORM
+        MENUITEM SEPARATOR
+        MENUITEM "&Work Offline",               ID_FILE_WORKOFFLINE
+        MENUITEM "Disable Scroll Text in Status Bar", ID_OPTIONS_URLINSTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "Enable URL Alias",            ID_SHORTCUT_ALIAS
+        MENUITEM "Enable Quick Key",            ID_SHORTCUT_USE_SC
+        MENUITEM SEPARATOR
+        MENUITEM "&Full Screen\tF11",           ID_VIEW_FULLSCREEN
+        MENUITEM "Auto Hide\tF12",              ID_VIEW_AUTOHIDE
+        MENUITEM SEPARATOR
+        MENUITEM "&Hide/Show MyIE9",            ID_FILE_HIDE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+END
+
+IDR_DRAG_IMG MENU DISCARDABLE 
+BEGIN
+    POPUP "img"
+    BEGIN
+        MENUITEM "&Hide Image",                 ID_URL_SHOW_IMG
+        MENUITEM SEPARATOR
+        MENUITEM "Show Image &Menu",            ID_URL_SHOW
+        MENUITEM SEPARATOR
+        MENUITEM "&Save As The Image...",       ID_IMAGE_SAVEAS
+        MENUITEM "&Edit Image URL...",          ID_URL_EDIT
+        MENUITEM "&Copy Image URL",             ID_URL_COPY
+        MENUITEM SEPARATOR
+        MENUITEM "Add to &Filter...",           ID_URL_FILTER
+    END
+END
+
+IDR_DRAG_LINK MENU DISCARDABLE 
+BEGIN
+    POPUP "link"
+    BEGIN
+        MENUITEM "Open",                        ID_URL_OPEN
+        MENUITEM "Open in Other Side",          ID_URL_OPEN_OTHER_SIDE
+        MENUITEM SEPARATOR
+        MENUITEM "Open in Foreground",          ID_URL_OPEN_ACTIVE
+        MENUITEM "Open in Background",          ID_URL_OPEN_INACTIVE
+        MENUITEM "Open In &Internet Explorer",  ID_URL_OPEN_IE
+        MENUITEM SEPARATOR
+        MENUITEM "Open &Jump URL Direct",       ID_URL_OPEN_JUMP
+        MENUITEM "Open &Ftp URL",               ID_URL_OPEN_FTP
+        MENUITEM SEPARATOR
+        MENUITEM "Add to Collector",            ID_URL_COLLECTOR
+        POPUP "Add to &Group"
+        BEGIN
+            MENUITEM SEPARATOR
+        END
+        MENUITEM "Add to Ad Content Filter...", ID_URL_FILTER
+        MENUITEM "Add to Favorite...",          ID_URL_ADDTO_FAV
+        MENUITEM SEPARATOR
+        MENUITEM "Edit I&mage URL ...",         ID_EDIT_IMG_URL
+        MENUITEM SEPARATOR
+        MENUITEM "Edit &URL ...",               ID_URL_EDIT
+        MENUITEM "Copy URL",                    ID_URL_COPY
+        MENUITEM SEPARATOR
+        MENUITEM "&Edit Text...",               ID_TEXT_EDIT
+        MENUITEM "&Copy Text",                  ID_TEXT_COPY
+    END
+END
+
+IDR_DRAG_TEXT MENU DISCARDABLE 
+BEGIN
+    POPUP "txt"
+    BEGIN
+        MENUITEM "Open",                        ID_URL_OPEN
+        MENUITEM "Open in Other Side",          ID_URL_OPEN_OTHER_SIDE
+        MENUITEM SEPARATOR
+        MENUITEM "Open in Foreground",          ID_URL_OPEN_ACTIVE
+        MENUITEM "Open in Background",          ID_URL_OPEN_INACTIVE
+        MENUITEM "Open in &Internet Explorer",  ID_URL_OPEN_IE
+        MENUITEM SEPARATOR
+        MENUITEM "Open Selected &Links",        ID_TEXT_OPEN_LINKS
+        MENUITEM "Open &Ftp URL",               ID_URL_OPEN_FTP
+        MENUITEM SEPARATOR
+        MENUITEM "Add to Collector",            ID_TEXT_COLLECTOR
+        MENUITEM "Add to Ad Content Filter...", ID_URL_FILTER
+        MENUITEM SEPARATOR
+        MENUITEM "Search",                      ID_TEXT_SEARCH
+        POPUP "All &Search"
+        BEGIN
+            MENUITEM SEPARATOR
+        END
+        MENUITEM "&Highlight",                  ID_TEXT_HIGH_LIGHT
+        MENUITEM "Find in Page",                ID_TEXT_FIND
+        MENUITEM SEPARATOR
+        MENUITEM "Save &Text... ",              ID_TEXT_SAVE
+        MENUITEM "&Auto Save Text",             ID_TEXT_AUTOSAVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Edit Text...",               ID_TEXT_EDIT
+        MENUITEM "&Copy Text",                  ID_TEXT_COPY
+    END
+END
+
+IDR_RTAB_TOP MENU DISCARDABLE 
+BEGIN
+    POPUP "tab"
+    BEGIN
+        MENUITEM "&Favorite...\tCtrl+D",        ID_RTAB_ADDFAV
+        MENUITEM "&URL Alias...",               ID_RTAB_ADDALIAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Lock Tab\tAlt+X",            ID_RTAB_LOCK
+        MENUITEM "Close &All\tCtrl+Shift+W",    ID_FILE_CLOSEALL
+        POPUP "&Others"
+        BEGIN
+            MENUITEM "Auto &Save\tCtrl+B",          ID_RTAB_AUTOSAVE
+            MENUITEM SEPARATOR
+            MENUITEM "Clos&e Alike URL Tabs...",    ID_FILE_CLOSE_ALIKE_URL
+            MENUITEM "Close All &UnMarked Tabs",    ID_FILE_CLOSE_MARKED_URL
+            MENUITEM "Mark Al&ike URL Tabs...",     ID_RTAB_MARK_KIND
+            MENUITEM "&Mark Tab\tAlt+M",            ID_RTAB_MARK
+            MENUITEM SEPARATOR
+            MENUITEM "Pr&otect Tab...",             ID_RTAB_PROTECT
+            MENUITEM "Stick &Title",                ID_RTAB_STICKNAME
+            MENUITEM SEPARATOR
+            MENUITEM "&Popup Blocker...\tCtrl+R",   ID_RTAB_ADDTOPOPUPFILTER
+            MENUITEM "&Filter Flying...",           ID_RTAB_ADDTOFLYFILTER
+            MENUITEM SEPARATOR
+            MENUITEM "Close All &Left Tabs (<=)",   ID_FILE_CLOSE_ALL_LEFT
+            MENUITEM "Close All &Right Pages",      ID_FILE_CLOSE_ALL_RIGHT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Close\tAlt+C",               ID_FILE_CLOSE_2
+        MENUITEM "Close All &Keep Current\tCtrl+K", ID_RTAB_CLOSE_KEEPCUR
+    END
+END
+
+IDR_RMENU_EDIT MENU DISCARDABLE 
+BEGIN
+    POPUP "REdit"
+    BEGIN
+        MENUITEM "Clear,Paste and &Enter",      ID_REDIT_PASTE_ENTER
+        MENUITEM "&Copy(Smart)",                ID_REDIT_COPY
+        MENUITEM "&Delete(Smart)",              ID_REDIT_DELETE
+        MENUITEM "&Paste",                      ID_REDIT_PASTE
+        MENUITEM "&Undo",                       ID_REDIT_UNDO
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "0",            ID_C_0,                 VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "1",            ID_C_1,                 VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "1",            ID_SC_SAVEFORM,         VIRTKEY, ALT, NOINVERT
+    "2",            ID_C_2,                 VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "2",            ID_SC_SAVEGENFORM,      VIRTKEY, ALT, NOINVERT
+    "3",            ID_SC_SET_FORM_DATA,    VIRTKEY, ALT, NOINVERT
+    "3",            ID_C_3,                 VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "4",            ID_C_4,                 VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "5",            ID_C_5,                 VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "6",            ID_C_6,                 VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "7",            ID_C_7,                 VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "8",            ID_C_8,                 VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "9",            ID_C_9,                 VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "B",            ID_FILE_AUTOSAVE,       VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "D",            ID_FAVORITES_ADDTOFAVORITES, VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_ADDR_FOCUS,          VIRTKEY, ALT, NOINVERT
+    "V",            ID_FILE_QUICKSAVE,      VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_TOOLS_COLLECT,       VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_FILE_SAVEHTML,       VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_FILE_NEW_S,          VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "I",            ID_HIGHLIGHT_SELECTED_TEXT, VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "X",            ID_FILE_CLOSE_KEEPCUR,  VIRTKEY, ALT, NOINVERT
+    "L",            ID_ALL_PAGE_LINKS,      VIRTKEY, ALT, NOINVERT
+    "M",            ID_LAST_VISITED,        VIRTKEY, ALT, NOINVERT
+    "N",            ID_FILE_NEW_CLIP,       VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "N",            ID_NEWWINDOW,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_NEWWINDOW,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPENF,          VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_TOOLS_AUTOSCROLL_USEAUTOSCROLLING, VIRTKEY, SHIFT, 
+                                                    CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_TOOLS_EABLEPOPUPFILTER, VIRTKEY, ALT, NOINVERT
+    "P",            ID_FILE_NEW_CURRENTPAGE, VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "R",            ID_TOOLS_ADDTOPOPUPFILTER, VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_SC_FILLFORM,         VIRTKEY, ALT, NOINVERT
+    "R",            ID_FILE_NEW_CURRENT_HOME_PAGE, VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "R",            ID_VIEW_PROTECT,        VIRTKEY, CONTROL, ALT, NOINVERT
+    "M",            ID_VIEW_TOP_MOST,       VIRTKEY, CONTROL, ALT, NOINVERT
+    "S",            ID_FILE_SAVEAS,         VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "E",            ID_WINDOW_TILE_VERT,    VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "T",            ID_FILE_NEW_SELECT,     VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "U",            ID_FILE_NEW_CURRENT_UP_PAGE, VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_ADD,         ID_VIEW_PAGESIZE_ADD10, VIRTKEY, CONTROL, NOINVERT
+    VK_DIVIDE,      ID_VIEW_PAGESIZE_100,   VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        ID_VIEW_FONTS_DECREASE, VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        ID_TAB_NEXT,            VIRTKEY, ALT, NOINVERT
+    "B",            ID_TAB_NEXT,            VIRTKEY, ALT, NOINVERT
+    VK_ESCAPE,      ID_VIEW_STOP_ALL,       VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_FILE_NEW_BLANK,      VIRTKEY, NOINVERT
+    VK_F10,         ID_F_10,                VIRTKEY, NOINVERT
+    "E",            ID_F_10,                VIRTKEY, ALT, NOINVERT
+    VK_F11,         ID_F_11,                VIRTKEY, NOINVERT
+    VK_F11,         ID_F_11,                VIRTKEY, NOINVERT
+    VK_F11,         ID_MENU_BAR,            VIRTKEY, CONTROL, NOINVERT
+    VK_F12,         ID_F_12,                VIRTKEY, NOINVERT
+    VK_F2,          ID_F_2,                 VIRTKEY, NOINVERT
+    VK_F3,          ID_F_3,                 VIRTKEY, NOINVERT
+    VK_F4,          ID_FILE_CLOSE_1,        VIRTKEY, NOINVERT
+    VK_F5,          ID_F_5,                 VIRTKEY, NOINVERT
+    VK_F5,          ID_VIEW_COMPLETELY_REFRESH, VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_VIEW_REFRESHALL,     VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_F_6,                 VIRTKEY, NOINVERT
+    VK_F7,          ID_F_7,                 VIRTKEY, NOINVERT
+    VK_F8,          ID_F_8,                 VIRTKEY, NOINVERT
+    VK_F9,          ID_F_9,                 VIRTKEY, NOINVERT
+    VK_HOME,        ID_GO_START_PAGE,       VIRTKEY, ALT, NOINVERT
+    VK_LEFT,        ID_GO_BACK,             VIRTKEY, ALT, NOINVERT
+    "F",            ID_GO_BACK_AND_CLOSE,   VIRTKEY, ALT, NOINVERT
+    VK_RIGHT,       ID_GO_FORWARD,          VIRTKEY, ALT, NOINVERT
+    VK_SUBTRACT,    ID_VIEW_PAGESIZE_DEC10, VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          ID_VIEW_FONTS_INCREASE, VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          ID_TAB_PRE,             VIRTKEY, ALT, NOINVERT
+    "W",            ID_FILE_CLOSE_1,        VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_FILE_CLOSE_1,        VIRTKEY, ALT, NOINVERT
+    "W",            ID_WINDOW_MANAGER,      VIRTKEY, ALT, NOINVERT
+    "W",            ID_FILE_CLOSEALL,       VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "R",            ID_VIEW_LOCK,           VIRTKEY, ALT, NOINVERT
+    "Y",            ID_TOOLS_FLY_FILTER,    VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDOCLOSE,      VIRTKEY, ALT, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "MyIE9\0"
+            VALUE "FileDescription", "MyIE9 Web Browser\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "MyIE9\0"
+            VALUE "LegalCopyright", "Copyright (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MyIE9.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MyIE9 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROXY DLGINIT
+BEGIN
+    IDC_SPEED, 0x403, 8, 0
+0x6e49, 0x6176, 0x696c, 0x0064, 
+    IDC_SPEED, 0x403, 7, 0
+0x6c53, 0x776f, 0x7265, "\000" 
+    IDC_SPEED, 0x403, 5, 0
+0x6c53, 0x776f, "\000" 
+    IDC_SPEED, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_SPEED, 0x403, 5, 0
+0x6146, 0x7473, "\000" 
+    IDC_SPEED, 0x403, 7, 0
+0x6146, 0x7473, 0x7265, "\000" 
+    0
+END
+
+IDD_CUSTOMIZE DLGINIT
+BEGIN
+    IDC_TEXT_OPT, 0x403, 15, 0
+0x6f4e, 0x7420, 0x7865, 0x2074, 0x616c, 0x6562, 0x736c, "\000" 
+    IDC_TEXT_OPT, 0x403, 17, 0
+0x6853, 0x776f, 0x7420, 0x7865, 0x2074, 0x616c, 0x6562, 0x736c, "\000" 
+    IDC_TEXT_OPT, 0x403, 24, 0
+0x6553, 0x656c, 0x7463, 0x7669, 0x2065, 0x6574, 0x7478, 0x6f20, 0x206e, 
+0x6972, 0x6867, 0x0074, 
+    IDC_ICON_OPT, 0x403, 12, 0
+0x614c, 0x6772, 0x2065, 0x6369, 0x6e6f, 0x0073, 
+    IDC_ICON_OPT, 0x403, 12, 0
+0x6d53, 0x6c61, 0x206c, 0x6349, 0x6e6f, 0x0073, 
+    0
+END
+
+IDD_PROPPAGE_SAVE DLGINIT
+BEGIN
+    IDC_AUTOSAVE, 0x403, 28, 0
+0x6857, 0x6c6f, 0x2065, 0x6557, 0x2062, 0x6150, 0x6567, 0x2e28, 0x7468, 
+0x2c6d, 0x2e20, 0x7468, 0x6c6d, 0x0029, 
+    IDC_AUTOSAVE, 0x403, 21, 0
+0x6857, 0x6c6f, 0x2065, 0x6557, 0x2062, 0x6150, 0x6567, 0x2e28, 0x686d, 
+0x2974, "\000" 
+    IDC_AUTOSAVE, 0x403, 19, 0
+0x724f, 0x6769, 0x6e69, 0x6c61, 0x5020, 0x6761, 0x2065, 0x5448, 0x4c4d, 
+"\000" 
+    IDC_AUTOSAVE, 0x403, 19, 0
+0x6153, 0x6576, 0x5720, 0x6f68, 0x656c, 0x4320, 0x6e6f, 0x6574, 0x746e, 
+"\000" 
+    IDC_AUTOSAVE, 0x403, 14, 0
+0x6557, 0x2062, 0x6150, 0x6567, 0x4820, 0x4d54, 0x004c, 
+    IDC_AUTOSAVE, 0x403, 16, 0
+0x6554, 0x7478, 0x4620, 0x6c69, 0x2865, 0x742e, 0x7478, 0x0029, 
+    0
+END
+
+IDD_PROPPAGE_WINDOW DLGINIT
+BEGIN
+    IDC_NEW_SEQUENCE, 0x403, 5, 0
+0x6154, 0x6c69, "\000" 
+    IDC_NEW_SEQUENCE, 0x403, 5, 0
+0x654e, 0x7478, "\000" 
+    IDC_NEW_SEQUENCE, 0x403, 9, 0
+0x7250, 0x7665, 0x6f69, 0x7375, "\000" 
+    IDC_CLOSE_SEQUENCE, 0x403, 5, 0
+0x6154, 0x6c69, "\000" 
+    IDC_CLOSE_SEQUENCE, 0x403, 5, 0
+0x654e, 0x7478, "\000" 
+    IDC_CLOSE_SEQUENCE, 0x403, 9, 0
+0x7250, 0x7665, 0x6f69, 0x7375, "\000" 
+    IDC_CLOSE_SEQUENCE, 0x403, 11, 0
+0x614c, 0x7473, 0x5620, 0x7369, 0x7469, "\000" 
+    IDC_BLANKWIN, 0x403, 11, 0
+0x6c42, 0x6e61, 0x206b, 0x6150, 0x6567, "\000" 
+    IDC_BLANKWIN, 0x403, 6, 0
+0x2d2d, 0x2d2d, 0x002d, 
+    IDC_BLANKWIN, 0x403, 10, 0
+0x6f48, 0x656d, 0x5020, 0x6761, 0x0065, 
+    IDC_BLANKWIN, 0x403, 15, 0
+0x7246, 0x6d6f, 0x4320, 0x696c, 0x6270, 0x616f, 0x6472, "\000" 
+    IDC_BLANKWIN, 0x403, 6, 0
+0x2d2d, 0x2d2d, 0x002d, 
+    IDC_BLANKWIN, 0x403, 14, 0
+0x6553, 0x656c, 0x7463, 0x6465, 0x5420, 0x7865, 0x0074, 
+    IDC_BLANKWIN, 0x403, 15, 0
+0x6553, 0x656c, 0x7463, 0x6465, 0x4c20, 0x6e69, 0x736b, "\000" 
+    IDC_BLANKWIN, 0x403, 6, 0
+0x2d2d, 0x2d2d, 0x002d, 
+    IDC_BLANKWIN, 0x403, 13, 0
+0x7543, 0x7272, 0x6e65, 0x2074, 0x6150, 0x6567, "\000" 
+    IDC_BLANKWIN, 0x403, 16, 0
+0x7543, 0x7272, 0x6e65, 0x2074, 0x7055, 0x5020, 0x6761, 0x0065, 
+    IDC_BLANKWIN, 0x403, 18, 0
+0x7543, 0x7272, 0x6e65, 0x2074, 0x6f52, 0x746f, 0x5020, 0x6761, 0x0065, 
+
+    0
+END
+
+IDD_LINKLIST DLGINIT
+BEGIN
+    IDC_URL, 0x403, 1, 0
+"\000" 
+    IDC_URL, 0x403, 5, 0
+0x682e, 0x6d74, "\000" 
+    IDC_URL, 0x403, 6, 0
+0x682e, 0x6d74, 0x006c, 
+    IDC_URL, 0x403, 6, 0
+0x732e, 0x7468, 0x006d, 
+    IDC_URL, 0x403, 5, 0
+0x732e, 0x6677, "\000" 
+    IDC_URL, 0x403, 5, 0
+0x782e, 0x6c6d, "\000" 
+    IDC_URL, 0x403, 5, 0
+0x612e, 0x7073, "\000" 
+    IDC_URL, 0x403, 5, 0
+0x702e, 0x7068, "\000" 
+    IDC_URL, 0x403, 6, 0
+0x702e, 0x7068, 0x0033, 
+    IDC_URL, 0x403, 5, 0
+0x7a2e, 0x7069, "\000" 
+    IDC_URL, 0x403, 5, 0
+0x722e, 0x7261, "\000" 
+    IDC_URL, 0x403, 5, 0
+0x652e, 0x6578, "\000" 
+    IDC_URL, 0x403, 5, 0
+0x6d2e, 0x3370, "\000" 
+    IDC_URL, 0x403, 4, 0
+0x722e, 0x006d, 
+    IDC_URL, 0x403, 5, 0
+0x6d2e, 0x6770, "\000" 
+    IDC_URL, 0x403, 5, 0
+0x6a2e, 0x6770, "\000" 
+    IDC_URL, 0x403, 5, 0
+0x672e, 0x6669, "\000" 
+    IDC_URL, 0x403, 5, 0
+0x702e, 0x676e, "\000" 
+    IDC_URL, 0x403, 5, 0
+0x622e, 0x706d, "\000" 
+    IDC_URL, 0x403, 8, 0
+0x616d, 0x6c69, 0x6f74, 0x003a, 
+    IDC_URL, 0x403, 6, 0
+0x7468, 0x7074, 0x003a, 
+    IDC_URL, 0x403, 7, 0
+0x7468, 0x7074, 0x3a73, "\000" 
+    IDC_URL, 0x403, 5, 0
+0x7466, 0x3a70, "\000" 
+    IDC_URL, 0x403, 6, 0
+0x6966, 0x656c, 0x003a, 
+    IDC_URL, 0x403, 12, 0
+0x616a, 0x6176, 0x6373, 0x6972, 0x7470, 0x003a, 
+    0
+END
+
+IDD_PROPPAGE_MOUSE DLGINIT
+BEGIN
+    IDC_IMG_UP, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_IMG_UP, 0x403, 10, 0
+0x6f43, 0x6c6c, 0x6365, 0x6f74, 0x0072, 
+    IDC_IMG_UP, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_IMG_UP, 0x403, 9, 0
+0x6f50, 0x2070, 0x654d, 0x756e, "\000" 
+    IDC_IMG_UP, 0x403, 9, 0
+0x6853, 0x776f, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_UP, 0x403, 14, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_IMG_UP, 0x403, 9, 0
+0x6445, 0x7469, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_UP, 0x403, 9, 0
+0x6f43, 0x7970, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_UP, 0x403, 11, 0
+0x6853, 0x776f, 0x4920, 0x616d, 0x6567, "\000" 
+    IDC_IMG_UP, 0x403, 9, 0
+0x704f, 0x6e65, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_LEFT, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_IMG_LEFT, 0x403, 10, 0
+0x6f43, 0x6c6c, 0x6365, 0x6f74, 0x0072, 
+    IDC_IMG_LEFT, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_IMG_LEFT, 0x403, 9, 0
+0x6f50, 0x2070, 0x654d, 0x756e, "\000" 
+    IDC_IMG_LEFT, 0x403, 9, 0
+0x6853, 0x776f, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_LEFT, 0x403, 14, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_IMG_LEFT, 0x403, 9, 0
+0x6445, 0x7469, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_LEFT, 0x403, 9, 0
+0x6f43, 0x7970, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_LEFT, 0x403, 11, 0
+0x6853, 0x776f, 0x4920, 0x616d, 0x6567, "\000" 
+    IDC_IMG_LEFT, 0x403, 9, 0
+0x704f, 0x6e65, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_DOWN, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_IMG_DOWN, 0x403, 10, 0
+0x6f43, 0x6c6c, 0x6365, 0x6f74, 0x0072, 
+    IDC_IMG_DOWN, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_IMG_DOWN, 0x403, 9, 0
+0x6f50, 0x2070, 0x654d, 0x756e, "\000" 
+    IDC_IMG_DOWN, 0x403, 9, 0
+0x6853, 0x776f, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_DOWN, 0x403, 14, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_IMG_DOWN, 0x403, 9, 0
+0x6445, 0x7469, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_DOWN, 0x403, 9, 0
+0x6f43, 0x7970, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_DOWN, 0x403, 11, 0
+0x6853, 0x776f, 0x4920, 0x616d, 0x6567, "\000" 
+    IDC_IMG_DOWN, 0x403, 9, 0
+0x704f, 0x6e65, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_RIGHT, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_IMG_RIGHT, 0x403, 10, 0
+0x6f43, 0x6c6c, 0x6365, 0x6f74, 0x0072, 
+    IDC_IMG_RIGHT, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_IMG_RIGHT, 0x403, 9, 0
+0x6f50, 0x2070, 0x654d, 0x756e, "\000" 
+    IDC_IMG_RIGHT, 0x403, 9, 0
+0x6853, 0x776f, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_RIGHT, 0x403, 14, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_IMG_RIGHT, 0x403, 9, 0
+0x6445, 0x7469, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_RIGHT, 0x403, 9, 0
+0x6f43, 0x7970, 0x5520, 0x4c52, "\000" 
+    IDC_IMG_RIGHT, 0x403, 11, 0
+0x6853, 0x776f, 0x4920, 0x616d, 0x6567, "\000" 
+    IDC_IMG_RIGHT, 0x403, 9, 0
+0x704f, 0x6e65, 0x5520, 0x4c52, "\000" 
+    IDC_TXT_UP, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_TXT_UP, 0x403, 10, 0
+0x6f43, 0x6c6c, 0x6365, 0x6f74, 0x0072, 
+    IDC_TXT_UP, 0x403, 9, 0
+0x6f50, 0x2070, 0x654d, 0x756e, "\000" 
+    IDC_TXT_UP, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_TXT_UP, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6f46, 0x6572, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_TXT_UP, 0x403, 11, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x4549, "\000" 
+    IDC_TXT_UP, 0x403, 7, 0
+0x6553, 0x7261, 0x6863, "\000" 
+    IDC_TXT_UP, 0x403, 10, 0
+0x6948, 0x6867, 0x696c, 0x6867, 0x0074, 
+    IDC_TXT_UP, 0x403, 13, 0
+0x6946, 0x646e, 0x6920, 0x206e, 0x6150, 0x6567, "\000" 
+    IDC_TXT_UP, 0x403, 10, 0
+0x6153, 0x6576, 0x5420, 0x7865, 0x0074, 
+    IDC_TXT_UP, 0x403, 15, 0
+0x7541, 0x6f74, 0x5320, 0x7661, 0x2065, 0x6554, 0x7478, "\000" 
+    IDC_TXT_UP, 0x403, 10, 0
+0x6445, 0x7469, 0x5420, 0x7865, 0x0074, 
+    IDC_TXT_UP, 0x403, 10, 0
+0x6f43, 0x7970, 0x5420, 0x7865, 0x0074, 
+    IDC_TXT_UP, 0x403, 20, 0
+0x704f, 0x6e65, 0x5320, 0x6c65, 0x6365, 0x6574, 0x2064, 0x694c, 0x6b6e, 
+0x0073, 
+    IDC_TXT_UP, 0x403, 14, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_TXT_UP, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6142, 0x6b63, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_TXT_UP, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x744f, 0x6568, 0x2072, 0x6953, 0x6564, 
+"\000" 
+    IDC_TXT_LEFT, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_TXT_LEFT, 0x403, 10, 0
+0x6f43, 0x6c6c, 0x6365, 0x6f74, 0x0072, 
+    IDC_TXT_LEFT, 0x403, 9, 0
+0x6f50, 0x2070, 0x654d, 0x756e, "\000" 
+    IDC_TXT_LEFT, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_TXT_LEFT, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6f46, 0x6572, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_TXT_LEFT, 0x403, 11, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x4549, "\000" 
+    IDC_TXT_LEFT, 0x403, 7, 0
+0x6553, 0x7261, 0x6863, "\000" 
+    IDC_TXT_LEFT, 0x403, 10, 0
+0x6948, 0x6867, 0x696c, 0x6867, 0x0074, 
+    IDC_TXT_LEFT, 0x403, 13, 0
+0x6946, 0x646e, 0x6920, 0x206e, 0x6150, 0x6567, "\000" 
+    IDC_TXT_LEFT, 0x403, 10, 0
+0x6153, 0x6576, 0x5420, 0x7865, 0x0074, 
+    IDC_TXT_LEFT, 0x403, 15, 0
+0x7541, 0x6f74, 0x5320, 0x7661, 0x2065, 0x6554, 0x7478, "\000" 
+    IDC_TXT_LEFT, 0x403, 10, 0
+0x6445, 0x7469, 0x5420, 0x7865, 0x0074, 
+    IDC_TXT_LEFT, 0x403, 10, 0
+0x6f43, 0x7970, 0x5420, 0x7865, 0x0074, 
+    IDC_TXT_LEFT, 0x403, 20, 0
+0x704f, 0x6e65, 0x5320, 0x6c65, 0x6365, 0x6574, 0x2064, 0x694c, 0x6b6e, 
+0x0073, 
+    IDC_TXT_LEFT, 0x403, 14, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_TXT_LEFT, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6142, 0x6b63, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_TXT_LEFT, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x744f, 0x6568, 0x2072, 0x6953, 0x6564, 
+"\000" 
+    IDC_TXT_DOWN, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_TXT_DOWN, 0x403, 10, 0
+0x6f43, 0x6c6c, 0x6365, 0x6f74, 0x0072, 
+    IDC_TXT_DOWN, 0x403, 9, 0
+0x6f50, 0x2070, 0x654d, 0x756e, "\000" 
+    IDC_TXT_DOWN, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_TXT_DOWN, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6f46, 0x6572, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_TXT_DOWN, 0x403, 11, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x4549, "\000" 
+    IDC_TXT_DOWN, 0x403, 7, 0
+0x6553, 0x7261, 0x6863, "\000" 
+    IDC_TXT_DOWN, 0x403, 10, 0
+0x6948, 0x6867, 0x696c, 0x6867, 0x0074, 
+    IDC_TXT_DOWN, 0x403, 13, 0
+0x6946, 0x646e, 0x6920, 0x206e, 0x6150, 0x6567, "\000" 
+    IDC_TXT_DOWN, 0x403, 10, 0
+0x6153, 0x6576, 0x5420, 0x7865, 0x0074, 
+    IDC_TXT_DOWN, 0x403, 15, 0
+0x7541, 0x6f74, 0x5320, 0x7661, 0x2065, 0x6554, 0x7478, "\000" 
+    IDC_TXT_DOWN, 0x403, 10, 0
+0x6445, 0x7469, 0x5420, 0x7865, 0x0074, 
+    IDC_TXT_DOWN, 0x403, 10, 0
+0x6f43, 0x7970, 0x5420, 0x7865, 0x0074, 
+    IDC_TXT_DOWN, 0x403, 20, 0
+0x704f, 0x6e65, 0x5320, 0x6c65, 0x6365, 0x6574, 0x2064, 0x694c, 0x6b6e, 
+0x0073, 
+    IDC_TXT_DOWN, 0x403, 14, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_TXT_DOWN, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6142, 0x6b63, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_TXT_DOWN, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x744f, 0x6568, 0x2072, 0x6953, 0x6564, 
+"\000" 
+    IDC_TXT_RIGHT, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_TXT_RIGHT, 0x403, 10, 0
+0x6f43, 0x6c6c, 0x6365, 0x6f74, 0x0072, 
+    IDC_TXT_RIGHT, 0x403, 9, 0
+0x6f50, 0x2070, 0x654d, 0x756e, "\000" 
+    IDC_TXT_RIGHT, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_TXT_RIGHT, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6f46, 0x6572, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_TXT_RIGHT, 0x403, 11, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x4549, "\000" 
+    IDC_TXT_RIGHT, 0x403, 7, 0
+0x6553, 0x7261, 0x6863, "\000" 
+    IDC_TXT_RIGHT, 0x403, 10, 0
+0x6948, 0x6867, 0x696c, 0x6867, 0x0074, 
+    IDC_TXT_RIGHT, 0x403, 13, 0
+0x6946, 0x646e, 0x6920, 0x206e, 0x6150, 0x6567, "\000" 
+    IDC_TXT_RIGHT, 0x403, 10, 0
+0x6153, 0x6576, 0x5420, 0x7865, 0x0074, 
+    IDC_TXT_RIGHT, 0x403, 15, 0
+0x7541, 0x6f74, 0x5320, 0x7661, 0x2065, 0x6554, 0x7478, "\000" 
+    IDC_TXT_RIGHT, 0x403, 10, 0
+0x6445, 0x7469, 0x5420, 0x7865, 0x0074, 
+    IDC_TXT_RIGHT, 0x403, 10, 0
+0x6f43, 0x7970, 0x5420, 0x7865, 0x0074, 
+    IDC_TXT_RIGHT, 0x403, 20, 0
+0x704f, 0x6e65, 0x5320, 0x6c65, 0x6365, 0x6574, 0x2064, 0x694c, 0x6b6e, 
+0x0073, 
+    IDC_TXT_RIGHT, 0x403, 14, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_TXT_RIGHT, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6142, 0x6b63, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_TXT_RIGHT, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x744f, 0x6568, 0x2072, 0x6953, 0x6564, 
+"\000" 
+    IDC_LINK_UP, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_LINK_UP, 0x403, 10, 0
+0x6f43, 0x6c6c, 0x6365, 0x6f74, 0x0072, 
+    IDC_LINK_UP, 0x403, 9, 0
+0x6f50, 0x2070, 0x654d, 0x756e, "\000" 
+    IDC_LINK_UP, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_LINK_UP, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6f46, 0x6572, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_LINK_UP, 0x403, 11, 0
+0x704f, 0x6e65, 0x4920, 0x206e, 0x4549, "\000" 
+    IDC_LINK_UP, 0x403, 14, 0
+0x704f, 0x6e65, 0x4a20, 0x6d75, 0x2070, 0x5255, 0x004c, 
+    IDC_LINK_UP, 0x403, 10, 0
+0x6445, 0x7469, 0x5420, 0x7865, 0x0074, 
+    IDC_LINK_UP, 0x403, 10, 0
+0x6f43, 0x7970, 0x5420, 0x7865, 0x0074, 
+    IDC_LINK_UP, 0x403, 9, 0
+0x6445, 0x7469, 0x5520, 0x4c52, "\000" 
+    IDC_LINK_UP, 0x403, 9, 0
+0x6f43, 0x7970, 0x5520, 0x4c52, "\000" 
+    IDC_LINK_UP, 0x403, 14, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_LINK_UP, 0x403, 16, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x7661, 0x726f, 0x7469, 0x0065, 
+    IDC_LINK_UP, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6142, 0x6b63, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_LINK_UP, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x744f, 0x6568, 0x2072, 0x6953, 0x6564, 
+"\000" 
+    IDC_LINK_UP, 0x403, 11, 0
+0x6853, 0x776f, 0x4920, 0x616d, 0x6567, "\000" 
+    IDC_LINK_UP, 0x403, 15, 0
+0x6445, 0x7469, 0x4920, 0x616d, 0x6567, 0x5520, 0x4c52, "\000" 
+    IDC_LINK_LEFT, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_LINK_LEFT, 0x403, 10, 0
+0x6f43, 0x6c6c, 0x6365, 0x6f74, 0x0072, 
+    IDC_LINK_LEFT, 0x403, 9, 0
+0x6f50, 0x2070, 0x654d, 0x756e, "\000" 
+    IDC_LINK_LEFT, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_LINK_LEFT, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6f46, 0x6572, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_LINK_LEFT, 0x403, 11, 0
+0x704f, 0x6e65, 0x4920, 0x206e, 0x4549, "\000" 
+    IDC_LINK_LEFT, 0x403, 14, 0
+0x704f, 0x6e65, 0x4a20, 0x6d75, 0x2070, 0x5255, 0x004c, 
+    IDC_LINK_LEFT, 0x403, 10, 0
+0x6445, 0x7469, 0x5420, 0x7865, 0x0074, 
+    IDC_LINK_LEFT, 0x403, 10, 0
+0x6f43, 0x7970, 0x5420, 0x7865, 0x0074, 
+    IDC_LINK_LEFT, 0x403, 9, 0
+0x6445, 0x7469, 0x5520, 0x4c52, "\000" 
+    IDC_LINK_LEFT, 0x403, 9, 0
+0x6f43, 0x7970, 0x5520, 0x4c52, "\000" 
+    IDC_LINK_LEFT, 0x403, 14, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_LINK_LEFT, 0x403, 16, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x7661, 0x726f, 0x7469, 0x0065, 
+    IDC_LINK_LEFT, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6142, 0x6b63, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_LINK_LEFT, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x744f, 0x6568, 0x2072, 0x6953, 0x6564, 
+"\000" 
+    IDC_LINK_LEFT, 0x403, 11, 0
+0x6853, 0x776f, 0x4920, 0x616d, 0x6567, "\000" 
+    IDC_LINK_LEFT, 0x403, 15, 0
+0x6445, 0x7469, 0x4920, 0x616d, 0x6567, 0x5520, 0x4c52, "\000" 
+    IDC_LINK_DOWN, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_LINK_DOWN, 0x403, 10, 0
+0x6f43, 0x6c6c, 0x6365, 0x6f74, 0x0072, 
+    IDC_LINK_DOWN, 0x403, 9, 0
+0x6f50, 0x2070, 0x654d, 0x756e, "\000" 
+    IDC_LINK_DOWN, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_LINK_DOWN, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6f46, 0x6572, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_LINK_DOWN, 0x403, 11, 0
+0x704f, 0x6e65, 0x4920, 0x206e, 0x4549, "\000" 
+    IDC_LINK_DOWN, 0x403, 14, 0
+0x704f, 0x6e65, 0x4a20, 0x6d75, 0x2070, 0x5255, 0x004c, 
+    IDC_LINK_DOWN, 0x403, 10, 0
+0x6445, 0x7469, 0x5420, 0x7865, 0x0074, 
+    IDC_LINK_DOWN, 0x403, 10, 0
+0x6f43, 0x7970, 0x5420, 0x7865, 0x0074, 
+    IDC_LINK_DOWN, 0x403, 9, 0
+0x6445, 0x7469, 0x5520, 0x4c52, "\000" 
+    IDC_LINK_DOWN, 0x403, 9, 0
+0x6f43, 0x7970, 0x5520, 0x4c52, "\000" 
+    IDC_LINK_DOWN, 0x403, 14, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_LINK_DOWN, 0x403, 16, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x7661, 0x726f, 0x7469, 0x0065, 
+    IDC_LINK_DOWN, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6142, 0x6b63, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_LINK_DOWN, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x744f, 0x6568, 0x2072, 0x6953, 0x6564, 
+"\000" 
+    IDC_LINK_DOWN, 0x403, 11, 0
+0x6853, 0x776f, 0x4920, 0x616d, 0x6567, "\000" 
+    IDC_LINK_DOWN, 0x403, 15, 0
+0x6445, 0x7469, 0x4920, 0x616d, 0x6567, 0x5520, 0x4c52, "\000" 
+    IDC_LINK_RIGHT, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_LINK_RIGHT, 0x403, 10, 0
+0x6f43, 0x6c6c, 0x6365, 0x6f74, 0x0072, 
+    IDC_LINK_RIGHT, 0x403, 9, 0
+0x6f50, 0x2070, 0x654d, 0x756e, "\000" 
+    IDC_LINK_RIGHT, 0x403, 5, 0
+0x704f, 0x6e65, "\000" 
+    IDC_LINK_RIGHT, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6f46, 0x6572, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_LINK_RIGHT, 0x403, 11, 0
+0x704f, 0x6e65, 0x4920, 0x206e, 0x4549, "\000" 
+    IDC_LINK_RIGHT, 0x403, 14, 0
+0x704f, 0x6e65, 0x4a20, 0x6d75, 0x2070, 0x5255, 0x004c, 
+    IDC_LINK_RIGHT, 0x403, 10, 0
+0x6445, 0x7469, 0x5420, 0x7865, 0x0074, 
+    IDC_LINK_RIGHT, 0x403, 10, 0
+0x6f43, 0x7970, 0x5420, 0x7865, 0x0074, 
+    IDC_LINK_RIGHT, 0x403, 9, 0
+0x6445, 0x7469, 0x5520, 0x4c52, "\000" 
+    IDC_LINK_RIGHT, 0x403, 9, 0
+0x6f43, 0x7970, 0x5520, 0x4c52, "\000" 
+    IDC_LINK_RIGHT, 0x403, 14, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_LINK_RIGHT, 0x403, 16, 0
+0x6441, 0x2064, 0x6f74, 0x4620, 0x7661, 0x726f, 0x7469, 0x0065, 
+    IDC_LINK_RIGHT, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x6142, 0x6b63, 0x7267, 0x756f, 0x646e, 
+"\000" 
+    IDC_LINK_RIGHT, 0x403, 19, 0
+0x704f, 0x6e65, 0x6920, 0x206e, 0x744f, 0x6568, 0x2072, 0x6953, 0x6564, 
+"\000" 
+    IDC_LINK_RIGHT, 0x403, 11, 0
+0x6853, 0x776f, 0x4920, 0x616d, 0x6567, "\000" 
+    IDC_LINK_RIGHT, 0x403, 15, 0
+0x6445, 0x7469, 0x4920, 0x616d, 0x6567, 0x5520, 0x4c52, "\000" 
+    0
+END
+
+IDD_PROPPAGE_TAB DLGINIT
+BEGIN
+    IDC_LDBCLICK, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_LDBCLICK, 0x403, 13, 0
+0x6c43, 0x736f, 0x2065, 0x6957, 0x646e, 0x776f, "\000" 
+    IDC_LDBCLICK, 0x403, 8, 0
+0x6153, 0x6576, 0x4120, 0x0073, 
+    IDC_LDBCLICK, 0x403, 10, 0
+0x6153, 0x6576, 0x4820, 0x4d54, 0x004c, 
+    IDC_LDBCLICK, 0x403, 10, 0
+0x7541, 0x6f74, 0x5320, 0x7661, 0x0065, 
+    IDC_LDBCLICK, 0x403, 12, 0
+0x6f4c, 0x6b63, 0x5720, 0x6e69, 0x6f64, 0x0077, 
+    IDC_LDBCLICK, 0x403, 8, 0
+0x6552, 0x7266, 0x7365, 0x0068, 
+    IDC_LDBCLICK, 0x403, 15, 0
+0x7541, 0x6f74, 0x5320, 0x726f, 0x2074, 0x6153, 0x6576, "\000" 
+    IDC_MCLIK, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_MCLIK, 0x403, 13, 0
+0x6c43, 0x736f, 0x2065, 0x6957, 0x646e, 0x776f, "\000" 
+    IDC_MCLIK, 0x403, 8, 0
+0x6153, 0x6576, 0x4120, 0x0073, 
+    IDC_MCLIK, 0x403, 10, 0
+0x6153, 0x6576, 0x4820, 0x4d54, 0x004c, 
+    IDC_MCLIK, 0x403, 10, 0
+0x7541, 0x6f74, 0x5320, 0x7661, 0x0065, 
+    IDC_MCLIK, 0x403, 12, 0
+0x6f4c, 0x6b63, 0x5720, 0x6e69, 0x6f64, 0x0077, 
+    IDC_MCLIK, 0x403, 8, 0
+0x6552, 0x7266, 0x7365, 0x0068, 
+    IDC_MCLIK, 0x403, 15, 0
+0x7541, 0x6f74, 0x5320, 0x726f, 0x2074, 0x6153, 0x6576, "\000" 
+    IDC_RCLIK, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_RCLIK, 0x403, 13, 0
+0x6c43, 0x736f, 0x2065, 0x6957, 0x646e, 0x776f, "\000" 
+    IDC_RCLIK, 0x403, 8, 0
+0x6153, 0x6576, 0x4120, 0x0073, 
+    IDC_RCLIK, 0x403, 10, 0
+0x6153, 0x6576, 0x4820, 0x4d54, 0x004c, 
+    IDC_RCLIK, 0x403, 10, 0
+0x7541, 0x6f74, 0x5320, 0x7661, 0x0065, 
+    IDC_RCLIK, 0x403, 12, 0
+0x6f4c, 0x6b63, 0x5720, 0x6e69, 0x6f64, 0x0077, 
+    IDC_RCLIK, 0x403, 8, 0
+0x6552, 0x7266, 0x7365, 0x0068, 
+    IDC_RCLIK, 0x403, 15, 0
+0x7541, 0x6f74, 0x5320, 0x726f, 0x2074, 0x6153, 0x6576, "\000" 
+    0
+END
+
+IDD_SET_KEY DLGINIT
+BEGIN
+    IDC_KEYLIST, 0x403, 3, 0
+0x3246, "\000" 
+    IDC_KEYLIST, 0x403, 3, 0
+0x3346, "\000" 
+    IDC_KEYLIST, 0x403, 3, 0
+0x3446, "\000" 
+    IDC_KEYLIST, 0x403, 3, 0
+0x3546, "\000" 
+    IDC_KEYLIST, 0x403, 3, 0
+0x3646, "\000" 
+    IDC_KEYLIST, 0x403, 3, 0
+0x3746, "\000" 
+    IDC_KEYLIST, 0x403, 3, 0
+0x3846, "\000" 
+    IDC_KEYLIST, 0x403, 3, 0
+0x3946, "\000" 
+    IDC_KEYLIST, 0x403, 4, 0
+0x3146, 0x0030, 
+    IDC_KEYLIST, 0x403, 4, 0
+0x3146, 0x0031, 
+    IDC_KEYLIST, 0x403, 4, 0
+0x3146, 0x0032, 
+    0
+END
+
+IDD_PROPPAGE_DOWNLOAD DLGINIT
+BEGIN
+    IDC_DOWN_ALL, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_DOWN_ALL, 0x403, 17, 0
+0x794d, 0x4320, 0x6d6f, 0x7570, 0x6574, 0x2072, 0x6150, 0x6567, "\000" 
+    IDC_DOWN_ALL, 0x403, 35, 0
+0x794d, 0x4320, 0x6d6f, 0x7570, 0x6574, 0x2072, 0x6150, 0x6567, 0x6120, 
+0x646e, 0x4920, 0x746e, 0x6172, 0x656e, 0x2074, 0x6150, 0x6567, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_MyIE9               REGISTRY DISCARDABLE    "MyIE9.rgs"
+IDR_MyIE9NSHandle       REGISTRY DISCARDABLE    "res\\MyIE9NSHandle.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "MyIE9\n\nMyIE9\n\n\nMyIE9.Document\nMyIE9 Document"
+    IDR_MyIE9YPE            "\nUntitled-\nMyIE9\nMyIE9 Files (*.htm,*.html)\n.htm\nMyIE9.Document\nMyIE9 Document"
+    IDS_CLOSE_ALL_CONF      "Do you really want to close all windows?"
+    IDS_CONFIRM_EXIT        "Do you really want to exit?"
+    IDS_FAIL_EMAIL          "Fail to run email client."
+    IDS_NO_PROXY            "Please select a proxy server before enable !"
+    IDS_PROXY_FAIL          "Fail to set proxy server. Please use Internet Option to try again."
+    IDS_NO_IE_PROXY         "IE proxy server is empty !"
+    IDS_UTIL_FAIL           "Fail to run this external utility."
+    IDS_TITLE_HIS           "History"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MyIE9"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_MSG        " "
+    ID_INDICATOR_PROCESS    " "
+    ID_INDICATOR_TOOLS      " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MyIE9NSHANDLE_DESC  "MyIE9NSHandle Class"
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    IDS_IMG_EXISTED         "Image Existed => "
+    IDS_IMG_SAVE_TO         "Image Saved => "
+    IDS_NOT_DROP_IMG        "Not droped image or image not shown!"
+    IDS_TYPE_ICON           "Icon Files (*.ico)|*.ico|All Files (*.*)|*.*||"
+    IDS_SELECT_PATH         "Select Path: "
+    IDS_CLEAN_COLLECTOR     "Do you really want to clean the collector ?"
+    IDS_TYPE_EXTOOL         "Script Plug In Files (*.ini); Exe Files (*.exe)|*.exe;*.ini|Exe Files (*.exe)|*.exe|Script Plug In Files (*.ini)|*.ini|All Files (*.*)|*.*||"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_RESTOR        "\nRestore"
+    ID_WINDOW_MIN           "\nMinimize"
+    ID_FILE_OPENF           "\nOpen"
+    IDS_PASSWORD_ERROR      "Password is incorrect."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_PRINT           "\nPrint"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_EXIT             "Closes the window."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "\nCopy"
+    ID_EDIT_FIND            "\nFind"
+    ID_EDIT_PASTE           "\nPaste"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    ID_RMOUSE_DRAG          "\nMouse Drag Page"
+    ID_RMOUSE_GESTURE       "\nMouse Gesture"
+    ID_OPEN_CURSOR_LINE     "Open Cursor Line URL (Double Click Cursor Line)"
+    ID_COLLECTOR_CLEAR      "Clean"
+    ID_COLLECTOR_TRANS      "Transparent Mode"
+    ID_SEARCH_OK            "\nSearch "
+    ID_RUN_SCRIPT           "Run Selected Script Text"
+    IDS_GO                  "Go"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LINK_POPUP           " "
+    ID_MENU_BAR             " "
+    ID_SYSMENU_BAR          " "
+    ID_VIEW_REFRESHALL      "\nRefresh All"
+    ID_OPTIONS_NEWTAB       "\nNew to Next"
+    ID_VIEW_STOP_ALL        "\nStop All"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_CLOSEALL        "\nClose All"
+    ID_FILE_CLOSE_1         "\nClose(Alt+C)"
+    ID_FILE_SAVEAS          "\nSave As"
+    ID_VIEW_STOP            "\nStop"
+    ID_VIEW_REFRESH         "\nRefresh"
+    ID_FILE_WORKOFFLINE     "\nOffline"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GO_BACK              "\nBack"
+    ID_GO_FORWARD           "\nForward"
+    ID_GO_START_PAGE        "\nHome"
+    ID_FAVORITES_DROPDOWN   "\nFavorites"
+    ID_FONT_DROPDOWN        "\nText Size"
+    ID_ENCODE_DROPDOWN      "\nEncode"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SEARCH              "Search"
+    IDS_ADDRESS             "Address"
+    IDS_MY_COMPUTER         "My Computer"
+    IDS_SET_DEFAULT         "Do you want to set MyIE9 as the default Web Browser?\n\nYes, to set MyIE9 as default Browser. \nNo, to back to original setting."
+    IDS_TITLE_FAVORITE      "Favorites"
+    IDS_FAV_ADD             "Add"
+    IDS_FAV_ORG             "Organize"
+    IDS_OPEN_ALL_FAV        "Open All URL"
+    IDS_NEW_WINDOW          "\nNew"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_EMAIL          "\nEmail"
+    ID_TOOLS_ALL            "\nClean"
+    ID_OPTIONS_USE_PROXY    "\nProxy Server"
+    ID_OPTIONS_SET_PROXY    "Set Proxy..."
+    ID_OPTIONS_USE_WEBP     "\nWeb/Translate Proxy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEEKS_AGO           " Weeks ago"
+    IDS_SUNDAY              "Sunday"
+    IDS_MONDAY              "Monday"
+    IDS_TUESDAY             "Tuesday"
+    IDS_WEDNESDAY           "Wednesday"
+    IDS_THURSDAY            "Thursday"
+    IDS_FRIDAY              "Friday"
+    IDS_SATURDAY            "Saturday"
+    IDS_TODAY               "Today"
+    IDS_LAST_WEEK           "Last Week"
+    IDS_LINKS               "Links"
+    IDS_UNSET_START_FOLDER  "Unset Startup Folder"
+    IDS_NO_WEB_PROXY        "Please select a proxy before enable !"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_HIS             "\nHistory"
+    ID_VIEW_FULLSCREEN      "\nFull Screen"
+    ID_FAV_POPUP            " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPTIONS_MyIE9OPTIONS "\nOptions"
+    ID_OPTIONS_LOADIMAGE    "\nLoad Images"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SP_INVALID          "Invalid"
+    IDS_SP_SLOWER           "Slower"
+    IDS_SP_SLOW             "Slow"
+    IDS_SP_NOR              "Normal"
+    IDS_SP_FAST             "Fast"
+    IDS_SP_FASTER           "Faster"
+    IDS_FAV_MOST            "FolderOnly"
+    IDS_ALIAS               "Alias"
+    IDS_SEPARATOR           "Separator"
+    IDS_CANT_DO             "Can't minimizing or restoring window because some windows are in protected."
+    IDS_EX_TOOL             "Tools"
+    IDS_TITLE_SHELL         "Folder"
+    IDS_TITLE_RESOURCE      "Resource"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONFIRM_DEL         "Do you really want to Delete this Group?"
+    IDS_PROXY_ADDED         "The proxy is added successfully."
+    IDS_COMFIRM_CATE_DEL    "Do you really want to delete this category?"
+    IDS_CANT_MOVE_PROXY     "Can't move this proxy."
+    IDS_NEEDKEYSTRING       "Search Engine must use %s or %u to indicate the keyword."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TAB_PRE              "\nPrevious Window(F2)"
+    ID_TAB_NEXT             "\nNext Window(F3)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_EDIT            "\nEdit"
+    ID_FILE_STOP_OPENALL    "\nStop Open"
+    ID_VIEW_FOLDER          "\nFolder"
+    ID_OPTIONS_OPENLINKINNEWWINDOW "\nOpen Links in New Window"
+    ID_VIEW_EXPLOREBAR_RESOURCE "\nResource"
+    ID_TOOLS_AUTOSCROLL_USEAUTOSCROLLING "\nAuto Scroll"
+    ID_EDIT_UNDOCLOSE       "\nUndo Close"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ADDFAV              "Add URL Here..."
+    IDS_PAGE_SAVED          "Page Saved => "
+    IDS_TEXT_SAVED          "Text Saved => "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEWWINDOW            "\nNew Window"
+    ID_TOOLS_SETBG          "\nBack Color"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SC_FILLFORM          "\nFill Form"
+    ID_TOOLS_COLLECT        "\nCollector of Text, Output, Script"
+    ID_ALL_PAGE_LINKS       "\nLink List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SAVEDFORM           "Form Data Saved Count: "
+    IDS_FILL_FORM_COUNT     "Form Data Filled Count:"
+    IDS_SAVEIMAGEFAIL       "Can't save this image."
+    IDS_FILTERSHEET         "Set Ad Filter"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPTIONS_ACTIVENEWWINDOW "\nActivate New Window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GROUP                "\nGroup"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPTIONS_USE_IE_PROXY "Use IE Proxy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GO_UP_PAGE           "\nUp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COLLECTOR_SAVE       "Save"
+    ID_OPEN_SELECTED_TEXT   "Open Selected Text"
+    IDS_REG_HOTKEY_FAIL     "The hot key of ""Hide/Show MyIE9"" have been registered! Another MyIE9 or Application have registered the hot key!"
+    IDS_NAME_EXISTED        "Name have existed !"
+    IDS_GENERAL             "General"
+    IDS_WINDOW              "Window"
+    IDS_TAB                 "Tab"
+    IDS_DOWNLOAD            "Download"
+    IDS_MOUSE               "Mouse"
+    IDS_GESTURE             "Gesture"
+    IDS_ELSE                "Else"
+    IDS_COMMAND             "Command"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_AUTOHIDE        "\nAuto Hide"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_UP                  "U"
+    IDS_DOWN                "D"
+    IDS_LEFT                "L"
+    IDS_RIGHT               "R"
+    IDS_LEFT_CLICK          "Left Click"
+    IDS_LEFT_DBCLICK        "Left Double Click"
+    IDS_MIDDLE_CLICK        "Middle Click"
+    IDS_RIGHT_CLICK         "Right Click"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LEFT_RIGHT          "Left-Right Click"
+    IDS_RIGHT_LEFT          "Right-Left Click"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THANK_DONATE        "Thanks for your donation !"
+    ID_COLLECTOR_TXT        "Text Collector"
+    ID_COLLECTOR_OUTPUT     "Output Collector (Image, Page, Filter List...)"
+    ID_COLLECTOR_SCRIPT     "Script Collector"
+    IDS_TOOLBAR             "Toolbars"
+    IDS_AUTO_POPUP_FILTER   "Blocked Auto Pop-up From The Site => "
+    IDS_URL_FILTER          "Content Filter => "
+    IDS_USER_LIST_FILTER    "User List  Filter => "
+    IDS_MAX_COLLECTOR_TXT   "Text collector has max text, please clear it !"
+    IDS_MAX_COLLECTOR_OUTPUT 
+                            "Output collector has max text, please clear it !"
+    IDS_MAX_COLLECTOR_SCRIPT 
+                            "Script collector has max text, please clear it !"
+    IDS_REG_HOTKEY_OK       "Register hot key ok!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REG_HOTKEY_NULL     "Do you want to set hot key null ?"
+    IDS_TAB_STYLE           "Tab Style"
+    ID_LL_SELECT_ALL        "All"
+    ID_LL_SELECT_NONE       "None"
+    ID_LL_SELECT_UP         "Previous"
+    ID_LL_SELECT_DOWN       "Next"
+    ID_LL_SELECT_ODD        "Odd"
+    ID_LL_SELECT_EVEN       "Even"
+    ID_LL_OPEN_SELECT       "Open"
+    ID_LL_CLOSE_SELECT      "Cut"
+    ID_LL_COPY_URL          "Copy URL"
+    ID_LL_EDIT_URL          "Edit"
+    ID_LL_REFRESH           "Refresh"
+    IDS_CLOSE_LOCK_CONF     "Do you really want to close the locked window?"
+    IDS_NAME                "Name"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FIND_SEARCH_BAR      "\nFind in Page ( F6/F7 ) ( Ctrl/Shift+Enter )"
+    ID_HIGH_LIGHT_SEARCH_BAR "\nHighlight ( Ctrl+Shift+Enter )"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_URL                 "URL"
+    IDS_NEW_GROUP           "New Group"
+    IDS_SEARCH_ENGINE       "Search Engine"
+    IDS_LINK_LIST_TITLE     "Link List - Current/Total: "
+    IDS_SPEED               "Speed"
+    IDS_ADD_GROUP           "Add URL to this Group..."
+    IDS_OPEN_GROUP          "Open All Selected Group Member"
+    IDS_GROUPNAME_ERROR     "Can not create group, name can not use \\ / : * ? "" < > |"
+    IDS_NO_SEARCH_ENGINE    "No search engine, please set search engine first !"
+    IDS_GROUP_NOT_EXIST     "Group path not exist !"
+    IDS_NO_SEARCH_KEYWORD   "Please input keyword first !"
+    IDS_KEYWORD_COUNT       "Highlight Keyword Count: "
+    IDS_SAVE                "Save"
+    IDS_KEY                 "Key"
+    IDS_PROXY_SERVER        "Proxy Server"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_DISP       "0"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANS_PROXY         "Translation Proxy"
+    IDS_WEB_PROXY           "Web Proxy"
+    IDS_FIND_KEY_INDEX      "Find Keyword Current/Total: "
+    IDS_IE_PROXY            "IE Proxy Server"
+    IDS_INPUT_URL           "Input URL:"
+    IDS_NAME_NULL           "Name can not be null !"
+    IDS_URL_NULL            "URL can not be null !"
+    IDS_DATA                "Data"
+    IDS_INPUT_ITEM_DATA     "Input Form Item Data:"
+    IDS_CONFIRM_DELALL_FORMDATA 
+                            "Do you really want to delete all saved form data?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SCRIPT_ERR          "Script content error !"
+    IDS_SCRIPT_RUN_ERR      "Run script  error !"
+    IDS_SCRIPT_RUN_OK       "Run script ok !"
+    IDS_NOT_SELECT_SCRIPT   "Please select script in script collector first !"
+    IDS_INPUT_TITLE         "Input Title:"
+    IDS_CONFIRM_DOWNLOADING "Some pages are downloading, do you really want to exit ?"
+    IDS_NOT_DRAG_SCRIPT     "Invalid URL !"
+    IDS_NOT_SELECT_TEXT     "Please select text in collector !"
+    IDS_NOT_VALID_URL       "Not valid URL string !"
+    IDS_TITLE               "Title"
+    IDS_DONATED             "This Copy of MyIE9 Is Donated By: "
+    IDS_UNDONATED           "This Copy of MyIE9 Undonated."
+    IDS_MENU                "Menu"
+    IDS_START_CLOSE         "Start/Close"
+    IDS_DELETE              "Delete"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TYPE_QUICKSAVE      "HTML Files (*.htm;*.html)|*.htm;*.html|All Files (*.*)|*.*||"
+    IDS_TYPE_SOUND          "Wave Files (*.wav)|*.wav|All Files (*.*)|*.*||"
+    IDS_TYPE_OPENFILE       "HTML Files|*.htm;*.html|Text Files|*.txt|GIF Files|*.gif|JPEG Files|*.jpg;*.jpeg|AU Files|*.au|AIFF Files|*.aif;*.aiff|XBM Files|*.xbm|All Files|*.*||"
+    IDS_TYPE_COLLECTOR      "Text Files (*.txt)|*.txt|All Files (*.*)|*.*||"
+    IDS_EMPTY               "Empty"
+    IDS_TYPE_EXE            "Exe Files (*.exe)|*.exe|All Files (*.*)|*.*||"
+    IDS_FTP                 "Ftp URL"
+    IDS_DRAG                "Mouse Drag"
+    IDS_CONFIRM_IE_DOWN     "Internet Explorer downloading, do you really want to exit?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONFIRM             "Confirm"
+    IDS_STATUSBAR           "Status Bar"
+    IDS_INPUT_KEYWORD       "Input Keyword:"
+    IDS_COLLECTOR           "Collector"
+    IDS_NONE                "None"
+    IDS_TIP_01URL           "This maybe is a ""Spoofing Vulnerability"" URL. "
+    IDS_TIP_BROWSE          "Do you really want to browse ?"
+    IDS_TIP_URL             "URL:"
+    IDS_TIP_PROTECT         "Can't do this, this page have been protected !"
+    IDS_TIP_ADDTO_CONTENT_FILTER 
+                            "URL Add to Content Filter List ( Can Modify With * ):"
+    IDS_TIP_TEXT            "Text:"
+    IDS_TIP_OPEN_FTP_ERR    "Open Ftp URL error !"
+    IDS_LAST_VISITING_PAGES "Last Visiting"
+    IDS_LAST_CLOSED_PAGES   "Last Closed"
+    IDS_VISITING_PAGES      "Current Visiting"
+    IDS_CLOSED_PAGES        "Current Closed"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_EXTERNAL_AUTORUN "\nExternal"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NEWS                "News"
+    IDS_TECH                "Technology"
+    IDS_AMUSE               "Amusement"
+    IDS_NEW_DIR             "New Directory Name:"
+    IDS_INTERNAL_LANG       "Default [English]"
+    IDS_FILENAME            "File Name"
+    IDS_LANGUAGE            "Language"
+    IDS_VERSION             "Version"
+    IDS_ICON                "Icon"
+    IDS_NOT_FIND            "Not find "
+    IDS_DIALOG_FILTER       "Dialog Filter => "
+    IDS_HELP_MAIL           "For that not have enough time, now mail service only open to co-worker and donator."
+    IDS_DO_YOU_WANT         "Do you want to "
+    ID_ENABLE_FILTER        "\nEnable Filter"
+    IDS_POPUP_FILTER        "Popup Filter"
+    IDS_CONTENT_FILTER      "Content Filter"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REFRESH             "Refresh"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_DONATE          "Thanks for you donate us!\n\nYes,to donate us now.\nNo, to input your name,if have donated us."
+    IDS_YOUR_NAME           "Your Name:"
+    IDS_RIGHT_BUTTON_TIP_GESTURE "Down the right mouse button and move"
+    IDS_RIGHT_BUTTON_TIP_DRAG 
+                            "Down the right mouse button and drag page down."
+    IDS_STARTUP_STATUS      "Tips: Click top right close icon to close one current page. Right down mouse button when page downloaded to see more feature."
+    IDS_BLOCKED_MSG_PAGE    "The browser software report: Below website is evil(virus or cheat). <br><br>Better close current page.<br><br>Click it if you still want to open at this time: &nbsp;<A HREF=""1%s"">%s</A><br><br>If it's not evil, click this link:&nbsp;<A HREF=""2%s"">It's not evil website</A>"
+    IDS_TITILE_UNCHANGE     "MyIE9"
+    IDS_QUICK_LINKS_FOLDER_NAME "LinksBar"
+    IDS_VERSION_INTERNAL    "Internal version: V%s.0"
+    IDS_EDIT_UNDOCLOSE      "Closed"
+    IDS_VIEW_AUTOHIDE       "Hide tool bar. Appear again when mouse move to the top."
+    IDS_TOOLS_ALL           "Clean your privacy"
+    IDS_OPTIONS_MyIE9OPTIONS "Options. Change the Tab to top( In Tab Style)."
+    IDS_GO_BACK             "Back"
+    ID_TOP_CLOSE            "Exit App"
+    IDS_TOP_CLOSE           "Exit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_PATH_NOT_EXIST  "Failed. The path not exist."
+    IDS_MSG_SET_IE_PATH_OK  "Set OK."
+    IDS_MSG_SET_IE_PATH_FAILED 
+                            "Failed. Maybe you are not in administrative group of your computer."
+    IDS_MSG_GET_IE_PATH_FAILED 
+                            "Failed to get favorite path in windows registry."
+    IDS_OLD_QUICK_LINKS_FOLDER_NAME "LinksBar"
+    IDS_FLY_FILTER          "Flying Filter"
+    IDS_HOMEPAGE            "http://www.myie9.net"
+    IDS_SOFTWARE_FORUM      "http://bbs.myie9.net"
+    IDS_DEFAULT_FAV_PATH    "D:\\Favorites"
+    IDS_COMFIRM_IE8MODE     "Confirm to enable IE8 mode and disable IE7 compatible mode?\nRecommend not to enable IE8 mode. Because it would make some pages can't show normally."
+    IDS_FAV_ASK             "In order to never not lost favorites, change the IE favorite folder to this place?\nNew folder: %s\nOriginal folder: %s"
+    IDS_X_TIP_CLOSE_ALL_RIGHT "Right click 'x' to close all right pages."
+    IDS_RIGHT_DBCLICK       "Right Double Click"
+    IDS_FAKE_AS_IE          "Simulate as IE? Some links in other software may can't be open."
+    IDS_SYS_X_TIP           "Right click: Exit. Left: Close page. Could change it in 1.1 of Options."
+    IDS_SYS_X_TIP_SETTED    "Right click: Close page. Left: Exit. Could change it in 1.1 of Options."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOP_MOST        "\nAlways Top Most"
+    ID_GO_BACK_AND_CLOSE    "\nClose current page if no back. So visited page appeared."
+    ID_OPTIONS_SET_DEFAULT  "\nSet MyIE9 As The Default Browser"
+    ID_REDIT_PASTE_ENTER    "\nClear, Paste and Enter"
+    ID_REDIT_COPY           "\nSelect All When Nothing Selected"
+    ID_REDIT_DELETE         "\nSelect All When Nothing Selected"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OVERWRITE_FORM      "Already exist a form for current website. Overwrite it?"
+    IDS_NO_DATA_NEED_TO_SAVE "No data needs to be saved."
+    IDS_FAILED_TO_SAVE_FORM "Failed to save."
+    IDS_OVERWRITE_FIELD     "The field named ""%s"" already has value ""%s"". Overwrite the field with value ""%s""?"
+    IDS_TITLE_FORM_URL      "Title"
+    IDS_PAGE_LASTVISIT      "Last Unclosed"
+    IDS_PAGE_OPEN           "Open All"
+    IDS_PAGE_TYPED          "Typed URLs"
+    IDS_PAGE_FAV            "Recent Favorites"
+    IDS_PAGE_FORM           "Recent Forms"
+    IDS_SC_FILLFORM         "Fill"
+    IDS_RESTORE_CONFIG      "Restore all config to default?"
+    IDS_RESTORED            "OK. Please restart the software to take effect."
+    IDS_ASK_CONFIRM         "Confirm or not?"
+    IDS_ADDED_BADSITE       "Added to evil sites ok. It would notify before you visite the website next time."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MyIE9.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

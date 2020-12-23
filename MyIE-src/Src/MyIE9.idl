@@ -1,0 +1,37 @@
+// MyIE9.idl : IDL source for MyIE9.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (MyIE9.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+//#include "EXDISP.idl"; //gf
+	
+	[
+		object,
+		uuid(25E81C73-A6C1-46B2-A83B-C05565643062), //95E81C73-A6C1-46B2-A83B-C05565643062),//gfdb 25E81C73-A6C1-46B2-A83B-C05565643062),
+		helpstring("IMyIE9NSHandle Interface"), //gfdb IMyIE9NSHandle Interface"),
+		pointer_default(unique)
+	]
+	interface IMyIE9NSHandle : IUnknown
+	{
+	};
+
+[
+	uuid(133F1EF9-AE92-4C44-AE6B-DE5B0701E59B),
+	version(1.0),
+	helpstring("MyIE9 1.0 Type Library")//gfdb MyIE9 1.0 Type Library")
+]
+library MyIE9Lib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	
+	[
+		uuid(B96C53BD-FADC-45C7-A72D-EB5230433A46), //0002DF01-0000-0000-C000-000000000046), //gfdb B96C53BD-FADC-45C7-A72D-EB5230433A46),
+		helpstring("InternetExplorer.Application")//gfdb MyIE9NSHandle Class")
+	]
+	coclass MyIE9NSHandle
+	{
+		[default] interface IMyIE9NSHandle;
+ 	};
+};
